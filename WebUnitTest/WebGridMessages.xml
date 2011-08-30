@@ -1,0 +1,476 @@
+<?xml version="1.0" standalone="yes"?>
+<Language>
+  <Norwegian>
+    <LanguageID>Norwegian</LanguageID>
+    <AllTitle>Totalt antall poster funnet.</AllTitle>
+    <Update>Lagre</Update>
+    <UpdateClose>Lagre og lukk vindu</UpdateClose>
+    <Updated>Oppdatert</Updated>
+    <CloseWindow>Lukk vindu</CloseWindow>
+    <ErrorReport>Forspør support nøkkel</ErrorReport>
+    <DisplayReords>Sikker på du ønsker vise {0} poster data ?</DisplayReords>
+    <Insert>Legg til ny rad</Insert>
+    <ConfirmDelete>Er du sikker på at du vil slette denne?</ConfirmDelete>
+    <ConfirmCopy>Er du sikker på at du vil kopiere denne?</ConfirmCopy>
+    <NewRecord>Ny post</NewRecord>
+    <ShowRows>Antall {2}</ShowRows>
+    <Search>Søk</Search>
+    <EditRow>Rediger rad</EditRow>
+    <DeleteRow>Slett rad</DeleteRow>
+    <CopyRow>Kopier rad</CopyRow>
+    <Required>Feltet er påkrevd.</Required>
+    <First>Første side</First>
+    <Last>Siste side</Last>
+    <Next>Neste side</Next>
+    <Prev>Forrige side</Prev>
+    <DatePicker>Trykk på ikonet for å åpne kalender.</DatePicker>
+    <SortIcon>Sorter stigende/synkende.</SortIcon>
+    <UpdateRows>Lagre endringer</UpdateRows>
+    <Attachment>Last ned vedlegg</Attachment>
+    <RemoveImage>Fjern filen fra databasen</RemoveImage>
+    <TotalSummary>Totalt</TotalSummary>
+    <Password>Passord</Password>
+    <GenPassword>lag passord</GenPassword>
+    <ClickToActivate>Trykk for å aktivere.</ClickToActivate>
+    <ClickToActivateMenu>Trykk for å aktivere meny.</ClickToActivateMenu>
+    <ClickToCloseMenu>Trykk for å lukke meny.</ClickToCloseMenu>
+    <SystemMessage>System beskjed</SystemMessage>
+    <SystemMessage_UpdateInsert>Feil i oppdateringen.</SystemMessage_UpdateInsert>
+    <SystemMessage_NoMasterGrid>Påkrevd editor ikke funnet.</SystemMessage_NoMasterGrid>
+    <SystemMessage_NullMasterGrid>Påkrevd editor er ikke satt.</SystemMessage_NullMasterGrid>
+    <SystemMessage_FK>Feil i fremmednøkkel.</SystemMessage_FK>
+    <SystemMessage_Table>Angitt tabellnavn ikke funnet.</SystemMessage_Table>
+    <SystemMessage_ConnectionString>Feil i tilkoblingsstrengen.</SystemMessage_ConnectionString>
+    <SystemMessage_NoForeignkeys>Fremmednøkkel inneholder ingen poster.</SystemMessage_NoForeignkeys>
+    <SystemMessage_Unique>Noen felter må være unike.</SystemMessage_Unique>
+    <SystemMessage_MultiSelect>Feil i primærnøkkelen eller tabellnavnet.</SystemMessage_MultiSelect>
+    <SystemMessage_SavingFile>Kan ikke lagre filen '{0}'.</SystemMessage_SavingFile>
+    <SystemMessage_NoRecord>Post ikke funnet.</SystemMessage_NoRecord>
+    <SystemMessage_Foreignkey_tablename>Fremmednøkkelen for '{0}' er ikke spesifisert.</SystemMessage_Foreignkey_tablename>
+    <SystemMessage_ManyToMany_datasource>Datakildefeil i mange til mange feltet '{0}'.</SystemMessage_ManyToMany_datasource>
+    <SystemMessage_DataSource_retreive>Det mislykkes å motta data over antall rader fra datakilden.</SystemMessage_DataSource_retreive>
+    <SystemMessage_DataSource_NoTableName>Det er ingen tabell, visninger, eller sqlsetning(querylist) spesifisert.</SystemMessage_DataSource_NoTableName>
+    <SystemMessage_Foreignkey_Incorrect>Det er en eller flere feilinnstillinger til en fremmednøkkel.</SystemMessage_Foreignkey_Incorrect>
+    <SystemMessage_Foreignkey_noKey>I tabellen for fremmednøkkel '{0}' finnes det ingen primærnøkkel.</SystemMessage_Foreignkey_noKey>
+    <SystemMessage_DataSource_failedSchema>Databaseskjema kunne ikke bli lastet inn fra datakilden.</SystemMessage_DataSource_failedSchema>
+    <SystemMessage_DataSource_failedData>Det mislykkes å laste inn data fra datakilden, bruk 'debug' egenskap for mer informasjon.</SystemMessage_DataSource_failedData>
+    <SystemMessage_property_notfound>Det finnes ikke noen egenskap som heter '{0}' for kolonnen '{1}'.</SystemMessage_property_notfound>
+    <SystemMessage_DataSource_NoConnectionString>En standard OLEDB, OleDbConnection(.Net) tilkoblingsstreng har ikke blitt definert.</SystemMessage_DataSource_NoConnectionString>
+    <SystemMessage_DataSource_retrievedata>Det har oppstått en feil når data hentes fra serveren.</SystemMessage_DataSource_retrievedata>
+    <SystemMessage_DataSource_NoColumnName>Alle forhåndsdefinerte kolonner (WebGrid.Columns) må ha et navn.</SystemMessage_DataSource_NoColumnName>
+    <SystemMessage_DataSource_parseProperty>Error parsing the property.</SystemMessage_DataSource_parseProperty>
+    <SystemMessage_DataSource_parseField>Error parsing the field</SystemMessage_DataSource_parseField>
+    <SystemMessage_Data_failedXML>Det har oppstått en feil når XML dokumentet ble lastet inn.</SystemMessage_Data_failedXML>
+    <SystemMessage_Editor_noValidID>Den unike (WebGrid.Grid.ID) identifiseringen av WebGrid kan ikke starte med '_' eller inneholde mellomrom (' ').</SystemMessage_Editor_noValidID>
+    <SystemMessage_Update_data>Det mislykkes å lagre data mot datakilden.</SystemMessage_Update_data>
+    <SystemMessage_ForeignkeyNoValueColumn>ValueColumn (WebGrid.Columns.Foreignkey) for '{0}' er ikke spesifisert med en gyldig fremmednøkkel.</SystemMessage_ForeignkeyNoValueColumn>
+    <SystemMessage_Editor_filemissing>Bildefilen '{0}' mangler.</SystemMessage_Editor_filemissing>
+    <SystemMessage_Double_mathExpression>Det matematiske utrykket for '{0}' er ugyldig.</SystemMessage_Double_mathExpression>
+    <SystemMessage_List_required>Vennligst fyll inn feltet.</SystemMessage_List_required>
+    <SystemMessage_List_Int>Kun heltall er gyldig.</SystemMessage_List_Int>
+    <SystemMessage_List_dec>Ikke gyldig tall.</SystemMessage_List_dec>
+    <SystemMessage_List_date>Ikke gyldig dato. ({0}).</SystemMessage_List_date>
+    <SystemMessage_List_minLength>Feltet må inneholde minst {0} tegn.</SystemMessage_List_minLength>
+    <SystemMessage_List_maxLength>Feltet kan ikke inneholde mer enn {0} tegn.</SystemMessage_List_maxLength>
+    <SystemMessage_List_email>Ikke gyldig e-post.</SystemMessage_List_email>
+    <SystemMessage_List_validate>Ikke gyldig verdi.</SystemMessage_List_validate>
+    <SystemMessage_UniqueValueRequired>Tilsvarende verdi i feltet '{0}' eksisterer allerede i datakilden.</SystemMessage_UniqueValueRequired>
+    <SystemMessage_Required>Vennligst fyll inn '{0}'.</SystemMessage_Required>
+    <SystemMessage_Int>Feltet '{0}' er ikke et gyldig heltall.</SystemMessage_Int>
+    <SystemMessage_Dec>Feltet '{0}' er ikke et gyldig tall.</SystemMessage_Dec>
+    <SystemMessage_Date>'{0}' er ikke en gyldig dato ({1} er en gyldig dato).</SystemMessage_Date>
+    <SystemMessage_MinLength>'{0}' må inneholde minst {1} tegn.</SystemMessage_MinLength>
+    <SystemMessage_MaxLength>'{0}' kan ikke inneholde mer enn {1} tegn.</SystemMessage_MaxLength>
+    <SystemMessage_Email>'{0}' er ikke en gyldig e-post adresse.</SystemMessage_Email>
+    <SystemMessage_Validate>Verdien i feltet '{0}' har ikke en gyldig verdi.</SystemMessage_Validate>
+    <PagerPrefix>Side: </PagerPrefix>
+    <PagerStatus>Viser side {0} av {1}, poster {2} til {3} av {4} poster.</PagerStatus>
+    <EmptySearchFilter>Vis alt</EmptySearchFilter>
+    <DateTimeSearch>Sett ett datosøk </DateTimeSearch>
+    <DateTimeSearchReset>Nullstill datosøk</DateTimeSearchReset>
+  </Norwegian>
+  <Danish>
+    <LanguageID>Danish</LanguageID>
+    <AllTitle>Det totale antal poster</AllTitle>
+    <Update>Opdater</Update>
+    <UpdateClose>Opdater og lukk vindu</UpdateClose>
+    <Updated>Opdatert</Updated>
+    <CloseWindow>Lukk vindu</CloseWindow>
+    <ErrorReport>Forespør support nøkkel</ErrorReport>
+    <DisplayReords>Sikker på du ønsker vise {0} poster data ?</DisplayReords>
+    <Insert>Indsæt ny post</Insert>
+    <ConfirmDelete>Skal denne slettes ?</ConfirmDelete>
+    <ConfirmCopy>Skal denne kopieres ?</ConfirmCopy>
+    <NewRecord>Ny post</NewRecord>
+    <ShowRows>Viser rækker {0} til {1} af {2}</ShowRows>
+    <Search>Søg</Search>
+    <EditRow>Rediger række</EditRow>
+    <DeleteRow>Slet række</DeleteRow>
+    <CopyRow>Kopier række</CopyRow>
+    <Required>Feltet er obligatorisk.</Required>
+    <First>Første side</First>
+    <Last>Sidste side</Last>
+    <Next>Næste side</Next>
+    <Prev>Forrige side</Prev>
+    <DatePicker>Tryk for at åbne en dato-vælger.</DatePicker>
+    <SortIcon>Sorteret stigende/faldende.</SortIcon>
+    <UpdateRows>Opdater ændringer</UpdateRows>
+    <Attachment>Hent vedhæftet fil </Attachment>
+    <RemoveImage>Fjern fil fra databasen.</RemoveImage>
+    <TotalSummary>Total</TotalSummary>
+    <Password>Adgangskode:</Password>
+    <GenPassword>generer adgangskode</GenPassword>
+    <ClickToActivate>Trykk for aktivere.</ClickToActivate>
+    <ClickToActivateMenu>Trykk for å aktivere meny.</ClickToActivateMenu>
+    <ClickToCloseMenu>Trykk for å lukke meny.</ClickToCloseMenu>
+    <SystemMessage>System-meddelelse</SystemMessage>
+    <SystemMessage_UpdateInsert>Fejl ved opdatering!</SystemMessage_UpdateInsert>
+    <SystemMessage_NoMasterGrid>MasterGrid ikke fundet!</SystemMessage_NoMasterGrid>
+    <SystemMessage_Table>Tabelnavn ikke fundet!</SystemMessage_Table>
+    <SystemMessage_NoForeignkeys>Foreignkey's indeholder ikke nogen registreringer.</SystemMessage_NoForeignkeys>
+    <SystemMessage_Unique>Det kræves at enkelte felter er unikke</SystemMessage_Unique>
+    <SystemMessage_MultiSelect>Fejl ved forsøg på at gemme information!</SystemMessage_MultiSelect>
+    <SystemMessage_NoRecord>Registrering ikke fundet.</SystemMessage_NoRecord>
+    <SystemMessage_Foreignkey_tablename>Foreignkey-tabelnavnet for kolonne '{0}' er ikke angivet</SystemMessage_Foreignkey_tablename>
+    <SystemMessage_ManyToMany_datasource>Data-fejl for ManyToMany-kolonne '{0}'.</SystemMessage_ManyToMany_datasource>
+    <SystemMessage_DataSource_retreive>Det lykkedes ikke at hente antallet af registreringer fra datakilden.</SystemMessage_DataSource_retreive>
+    <SystemMessage_DataSource_NoTableName>Der er ikke angivet en tabel, visning eller sql-sætning for den pågældende grid.</SystemMessage_DataSource_NoTableName>
+    <SystemMessage_Foreignkey_Incorrect>Der er forkerte eller manglende parametre for en foreignkey.</SystemMessage_Foreignkey_Incorrect>
+    <SystemMessage_Foreignkey_noKey>Foreignkey-tabellen '{0}' indeholder ikke nogen hovednøgle(r).</SystemMessage_Foreignkey_noKey>
+    <SystemMessage_DataSource_failedSchema>Skemaet kunne ikke hentes fra datakilden.</SystemMessage_DataSource_failedSchema>
+    <SystemMessage_DataSource_failedData>Kunne ikke hente data fra datakilden, bruk debug egenskapen for mer informasjon.</SystemMessage_DataSource_failedData>
+    <SystemMessage_property_notfound>Navnet på egenskaben '{0}' eksisterer ikke i kolonne '{1}'.</SystemMessage_property_notfound>
+    <SystemMessage_DataSource_NoConnectionString>En standard OLEDB, OleDbConnection(.Net) egenskab for en forbindelsesstreng er ikke angivet.</SystemMessage_DataSource_NoConnectionString>
+    <SystemMessage_DataSource_retrievedata>Der fås fejl ved hentning af data fra serveren.</SystemMessage_DataSource_retrievedata>
+    <SystemMessage_DataSource_NoColumnName>Alle prædefinerede kolloner skal have et navn.</SystemMessage_DataSource_NoColumnName>
+    <SystemMessage_DataSource_parseProperty>Fejl ved afsendelse af egenskaben.</SystemMessage_DataSource_parseProperty>
+    <SystemMessage_DataSource_parseField>Fejl ved afsendelse af fejlt </SystemMessage_DataSource_parseField>
+    <SystemMessage_Data_failedXML>Der opstod en fejl ved indlæsning af XML-dokumentet.</SystemMessage_Data_failedXML>
+    <SystemMessage_Editor_noValidID>Egenskaben kan ikke starte med '_' eller indeholde mellemrum (' ').</SystemMessage_Editor_noValidID>
+    <SystemMessage_Update_data>Registreringen kunne ikke gemmes i datakilden.</SystemMessage_Update_data>
+    <SystemMessage_ForeignkeyNoValueColumn>Værdikolonnen (WebGrid.Columns.Foreignkey) for '{0}' indeholder ikke en valid Foreignkey.</SystemMessage_ForeignkeyNoValueColumn>
+    <SystemMessage_Editor_filemissing>WebGrid billede-fil '{0}' mangler.</SystemMessage_Editor_filemissing>
+    <SystemMessage_Double_mathExpression>Det matematiske udtryk for '{0}' er ikke validt.</SystemMessage_Double_mathExpression>
+    <SystemMessage_List_required>Udfyld venligst.</SystemMessage_List_required>
+    <SystemMessage_List_Int>Heltallig værdi er ikke valid.</SystemMessage_List_Int>
+    <SystemMessage_List_dec>Decimaltal værdi er ikke valid.</SystemMessage_List_dec>
+    <SystemMessage_List_date>Ikke valid dato. ({0}).</SystemMessage_List_date>
+    <SystemMessage_List_minLength>Der må ikke være mere end {0} karakterer.</SystemMessage_List_minLength>
+    <SystemMessage_List_maxLength>Der skal være mindst {0} karakterer.</SystemMessage_List_maxLength>
+    <SystemMessage_List_email>E-mail er ikke valid.</SystemMessage_List_email>
+    <SystemMessage_List_validate>Værdi er ikke valid.</SystemMessage_List_validate>
+    <SystemMessage_UniqueValueRequired>Tilsvarende verdi i feltet '{0}' eksisterer allerede i datakilden.</SystemMessage_UniqueValueRequired>
+    <SystemMessage_Required>Udfyld venligst '{0}'.</SystemMessage_Required>
+    <SystemMessage_Int>Heltalig værdi i '{0}' er ikke valid.</SystemMessage_Int>
+    <SystemMessage_Dec>Decimaltal værdi i '{0}' er ikke valid.</SystemMessage_Dec>
+    <SystemMessage_Date>Værdi i '{0}' er ikke en gyldig dato ({1} er en valid dato).</SystemMessage_Date>
+    <SystemMessage_MinLength>'{0}' skal som minimum indeholde {1} tegn.</SystemMessage_MinLength>
+    <SystemMessage_MaxLength>'{0}' kan ikke indeholde mere end {1} tegn.</SystemMessage_MaxLength>
+    <SystemMessage_Email>'{0}' er ikke en valid e-mail adresse.</SystemMessage_Email>
+    <SystemMessage_Validate>Værdien i '{0}' tilfredsstiller ikke kravet for denne kolonne.</SystemMessage_Validate>
+    <PagerPrefix>Side: </PagerPrefix>
+    <PagerStatus>Viser side {0} av {1}, poster {2} til {3} av {4} poster.</PagerStatus>
+    <EmptySearchFilter>Vis alt</EmptySearchFilter>
+    <DateTimeSearch>Sett ett datosøk </DateTimeSearch>
+    <DateTimeSearchReset>Nullstill datosøk</DateTimeSearchReset>
+  </Danish>
+  <Swedish>
+    <LanguageID>Swedish</LanguageID>
+    <Update>Uppdatera</Update>
+    <UpdateClose>Uppdatera og lukk vindu</UpdateClose>
+    <Updated>Uppdaterad</Updated>
+    <CloseWindow>Lukk vindu</CloseWindow>
+    <ErrorReport>Forespør support nøkkel</ErrorReport>
+    <DisplayReords>Sikker på du ønsker vise {0} poster data ?</DisplayReords>
+    <Insert>Skapa ny post</Insert>
+    <ConfirmDelete>år du sæker på att radera detta?</ConfirmDelete>
+    <ConfirmCopy>år du sæker på att kopiere detta?</ConfirmCopy>
+    <NewRecord>Ny post</NewRecord>
+    <ShowRows>Antall {2}</ShowRows>
+    <Search>Søk</Search>
+    <EditRow>Redigera rad</EditRow>
+    <DeleteRow>Radera rad</DeleteRow>
+    <CopyRow>Kopier rad</CopyRow>
+    <Required>Fältet är obligatorisk</Required>
+    <First>Førsta</First>
+    <Last>Sista</Last>
+    <Next>Næsta</Next>
+    <Prev>Färegende</Prev>
+    <UpdateRows>Uppdatera ändringar</UpdateRows>
+    <Password>Läsenord:</Password>
+    <GenPassword>Generera läsenord</GenPassword>
+    <ClickToActivate>Tryck fär aktivera.</ClickToActivate>
+    <ClickToActivateMenu>Tryck fär aktivera meny.</ClickToActivateMenu>
+    <ClickToCloseMenu>Tryck fär lukka meny.</ClickToCloseMenu>
+    <SystemMessage_UpdateInsert>Fel vid uppdatering!</SystemMessage_UpdateInsert>
+    <SystemMessage_NoMasterGrid>Kan inte hitta obligatorisk-editor</SystemMessage_NoMasterGrid>
+    <SystemMessage_NullMasterGrid>Kan inte hitta obligatorisk-editor</SystemMessage_NullMasterGrid>
+    <SystemMessage_FK>Fel med främmande nyckel</SystemMessage_FK>
+    <SystemMessage_Table>Kan inte hitta tabell namn</SystemMessage_Table>
+    <SystemMessage_ConnectionString>Fel i kommunikations-sträng</SystemMessage_ConnectionString>
+    <SystemMessage_NoForeignkeys>Fel med främmande nyckel</SystemMessage_NoForeignkeys>
+    <SystemMessage_Unique>Några fält måste vara unika</SystemMessage_Unique>
+    <SystemMessage_MultiSelect>Fel vid lagring av flervalgs-information</SystemMessage_MultiSelect>
+    <SystemMessage_SavingFile>Kan inte lagra fil: {0}</SystemMessage_SavingFile>
+    <SystemMessage_NoRecord>Kan inte hitta post</SystemMessage_NoRecord>
+    <SystemMessage_Required>Vänligen fyll i '{0}'.</SystemMessage_Required>
+    <SystemMessage_Int>Heltals värdet i '{0}' är inte giltigt.</SystemMessage_Int>
+    <SystemMessage_Dec>Decimal värdet i '{0}' är inte giltigt.</SystemMessage_Dec>
+    <SystemMessage_Date>Värdet i '{0}' är inte giltigt.</SystemMessage_Date>
+    <SystemMessage_MinLength>{0}' måste vara minst {1} tecken lengt.</SystemMessage_MinLength>
+    <SystemMessage_MaxLength>{0}' kan inte vara längre än {1} tecken. // 0=yeah, 1=maxlength</SystemMessage_MaxLength>
+    <SystemMessage_Email>{0}' är inte ett giltigt e-post adress.</SystemMessage_Email>
+    <PagerPrefix>Side: </PagerPrefix>
+    <PagerStatus>Viser side {0} av {1}, poster {2} til {3} av {4} poster.</PagerStatus>
+    <EmptySearchFilter>Vis alt</EmptySearchFilter>
+    <DateTimeSearch>Sett ett datosøk </DateTimeSearch>
+    <DateTimeSearchReset>Nullstill datosøk</DateTimeSearchReset>
+  </Swedish>
+  <Spanish>
+    <LanguageID>Spanish</LanguageID>
+    <AllTitle>Número total de registros encontrados.</AllTitle>
+    <Update>Actualizar</Update>
+    <UpdateClose>Actualizar</UpdateClose>
+    <CloseWindow>Volver window</CloseWindow>
+    <ErrorReport>Request support ticket</ErrorReport>
+    <DisplayReords>Are you sure you want to display {0} records ?</DisplayReords>
+    <Insert>Añadir un nuevo registro.</Insert>
+    <ConfirmDelete>¿Esta seguro de borrar este registro?</ConfirmDelete>
+    <NewRecord>Nuevo</NewRecord>
+    <ShowRows>Mostrando registros {0} a {1} de total {2}</ShowRows>
+    <Search>Buscar</Search>
+    <EditRow>Editar</EditRow>
+    <DeleteRow>Borrar</DeleteRow>
+    <Required>Campo requerido.</Required>
+    <First>Primera página</First>
+    <Last>Última página</Last>
+    <Next>Página siguiente</Next>
+    <Prev>Página anterior</Prev>
+    <DatePicker>Pincha en la imagen para seleccionar la fecha de un calendario.</DatePicker>
+    <SortIcon>Ordenado ascendente/descendentemente.</SortIcon>
+    <UpdateRows>Actualizar cambios</UpdateRows>
+    <Attachment>Descargar adjunto</Attachment>
+    <RemoveImage>Borrar imagen.</RemoveImage>
+    <TotalSummary>Total</TotalSummary>
+    <Password>Contraseña:</Password>
+    <GenPassword>generar contraseña</GenPassword>
+    <ClickToActivate>Click to activate.</ClickToActivate>
+    <ClickToActivateMenu>Click to activate menu.</ClickToActivateMenu>
+    <ClickToCloseMenu>Click to close menu.</ClickToCloseMenu>
+    <SystemMessage>Mensaje del Sistema</SystemMessage>
+    <SystemMessage_UpdateInsert>Error guardando datos!</SystemMessage_UpdateInsert>
+    <SystemMessage_NoMasterGrid>MasterGrid no encontrado!</SystemMessage_NoMasterGrid>
+    <SystemMessage_Table>Nombre de tabla no encontrada!</SystemMessage_Table>
+    <SystemMessage_NoForeignkeys>Las claves ajenas no contienen valor.</SystemMessage_NoForeignkeys>
+    <SystemMessage_Unique>Algunos campos deben ser únicos</SystemMessage_Unique>
+    <SystemMessage_MultiSelect>Error guardando la información multiselect!</SystemMessage_MultiSelect>
+    <SystemMessage_NoRecord>Registro no encontrado.</SystemMessage_NoRecord>
+    <SystemMessage_Foreignkey_tablename>La clave ajena (nombre de tabla) para la columna '{0}' no esta especificada.</SystemMessage_Foreignkey_tablename>
+    <SystemMessage_ManyToMany_datasource>Error en el origen de datos (Datasource) para la columna de Muchos a Muchos (ManyToMany) '{0}'.</SystemMessage_ManyToMany_datasource>
+    <SystemMessage_DataSource_retreive>Fallo al recuperar el número de registros del origen de datos (datasource).</SystemMessage_DataSource_retreive>
+    <SystemMessage_DataSource_NoTableName>No hay tabla, vista (view), o comando sql (querylist) espedificado para el grid.</SystemMessage_DataSource_NoTableName>
+    <SystemMessage_Foreignkey_Incorrect>Faltan paremetros o son incorrectos en la clave ajena.</SystemMessage_Foreignkey_Incorrect>
+    <SystemMessage_Foreignkey_noKey>La tabla de clave ajena '{0}' no tiene clave primaria.</SystemMessage_Foreignkey_noKey>
+    <SystemMessage_DataSource_failedSchema>El esquema de la tabla (tabla schema) no ha podido ser cargado del origen de datos(datasource).</SystemMessage_DataSource_failedSchema>
+    <SystemMessage_DataSource_failedData>Fallo al recuperar los datos del origen de datos (datasource), use debug property for more details.</SystemMessage_DataSource_failedData>
+    <SystemMessage_property_notfound>El nombre de la propiedad '{0}' no existe para la columna '{1}'.</SystemMessage_property_notfound>
+    <SystemMessage_DataSource_NoConnectionString>La cadena de conexión (connectionString) para OLEDB estándar o OleDbConnection(.Net) no ha sido establecida.</SystemMessage_DataSource_NoConnectionString>
+    <SystemMessage_DataSource_retrievedata>Ha habido un error recuperando los datos del servidor.</SystemMessage_DataSource_retrievedata>
+    <SystemMessage_DataSource_NoColumnName>Todas las columnas predefinidas deben tener un nombre.</SystemMessage_DataSource_NoColumnName>
+    <SystemMessage_DataSource_parseProperty>Error analizando la propiedad</SystemMessage_DataSource_parseProperty>
+    <SystemMessage_DataSource_parseField>Error analizando el campo</SystemMessage_DataSource_parseField>
+    <SystemMessage_Data_failedXML>Hubo un error cargando el documento XML.</SystemMessage_Data_failedXML>
+    <SystemMessage_Editor_noValidID>La propiedad ID (identificador) no puede iniciarse con '_' o con espacios en blanco (' ').</SystemMessage_Editor_noValidID>
+    <SystemMessage_Update_data>Registro no pudo ser guardado en el origen de datos (datasource).</SystemMessage_Update_data>
+    <SystemMessage_ForeignkeyNoValueColumn>ValueColumn (WebGrid.Columns.Foreignkey) para '{0}' no tiene una clave ajena válida.</SystemMessage_ForeignkeyNoValueColumn>
+    <SystemMessage_Editor_filemissing>Falta el fichero de imagen (WebGrid image file) '{0}'.</SystemMessage_Editor_filemissing>
+    <SystemMessage_Double_mathExpression>La expresión matemática para '{0}' no es válida.</SystemMessage_Double_mathExpression>
+    <SystemMessage_List_required>Valor requerido.</SystemMessage_List_required>
+    <SystemMessage_List_Int>Valor númerico (Integer) no es válido.</SystemMessage_List_Int>
+    <SystemMessage_List_dec>Valor decimal (Decimal) no es válido.</SystemMessage_List_dec>
+    <SystemMessage_List_date>Fecha no válida. ({0}).</SystemMessage_List_date>
+    <SystemMessage_List_minLength>La cadena debe tener más de {0} caracteres.</SystemMessage_List_minLength>
+    <SystemMessage_List_maxLength>La cadena debe tener como máximo {0} caracteres.</SystemMessage_List_maxLength>
+    <SystemMessage_List_email>El Email no es válido.</SystemMessage_List_email>
+    <SystemMessage_List_validate>El valor no es válido.</SystemMessage_List_validate>
+    <SystemMessage_UniqueValueRequired>Tilsvarende verdi i feltet '{0}' eksisterer allerede i datakilden.</SystemMessage_UniqueValueRequired>
+    <SystemMessage_Required>Por favor, rellene datos en '{0}'.</SystemMessage_Required>
+    <SystemMessage_Int>Valor entero (Integer) en '{0}' no es válido.</SystemMessage_Int>
+    <SystemMessage_Dec>valor decimal (Decimal) en '{0}' no es válido.</SystemMessage_Dec>
+    <SystemMessage_Date>Campo '{0}' no es una fecha válida ({1} es fecha válida).</SystemMessage_Date>
+    <SystemMessage_MinLength>'{0}' debe tener al menos {1} caracteres.</SystemMessage_MinLength>
+    <SystemMessage_MaxLength>'{0}' no puede tener menos de {1} caracteres.</SystemMessage_MaxLength>
+    <SystemMessage_Email>'{0}' no es una dirección de email válida.</SystemMessage_Email>
+    <SystemMessage_Validate>Valor en '{0}' no tiene una expresión válida para este campo.</SystemMessage_Validate>
+    <PagerPrefix>Page: </PagerPrefix>
+    <PagerStatus>Displaying page {0} of {1}, records {2} to {3} of {4} records.</PagerStatus>
+    <EmptySearchFilter>Display all</EmptySearchFilter>
+    <DateTimeSearch>Create date/time search </DateTimeSearch>
+    <DateTimeSearchReset>Reset date/time search</DateTimeSearchReset>
+  </Spanish>
+  <English>
+    <LanguageID>English</LanguageID>
+    <AllTitle>Total numbers of records found.</AllTitle>
+    <Update>Save</Update>
+    <UpdateClose>Save and close window</UpdateClose>
+    <Updated>Updated</Updated>
+    <CloseWindow>Close Window</CloseWindow>
+    <ErrorReport>Request support ticket</ErrorReport>
+    <DisplayReords>Are you sure you want to display {0} records ?</DisplayReords>
+    <Insert>Insert new record</Insert>
+    <ConfirmDelete>Are you sure you want to delete this?</ConfirmDelete>
+    <ConfirmCopy>Are you sure you want to copy this?</ConfirmCopy>
+    <NewRecord>Create a new record</NewRecord>
+    <ShowRows>Displaying rows {0} through {1} of total {2}</ShowRows>
+    <Search>Search</Search>
+    <EditRow>Edit row</EditRow>
+    <DeleteRow>Delete row</DeleteRow>
+    <CopyRow>Copy row</CopyRow>
+    <Required>Field is required.</Required>
+    <First>First page</First>
+    <Last>Last page</Last>
+    <Next>Next page</Next>
+    <Prev>Previous page</Prev>
+    <DatePicker>Click the image to open a datepicker.</DatePicker>
+    <SortIcon>Sorted increasing/decreasing.</SortIcon>
+    <UpdateRows>Update changes</UpdateRows>
+    <Attachment>Download attachment</Attachment>
+    <RemoveImage>Remove file from database.</RemoveImage>
+    <TotalSummary>Total</TotalSummary>
+    <Password>Password:</Password>
+    <GenPassword>generate password</GenPassword>
+    <ClickToActivate>Click to activate.</ClickToActivate>
+    <ClickToActivateMenu>Click to activate menu.</ClickToActivateMenu>
+    <ClickToCloseMenu>Click to close menu.</ClickToCloseMenu>
+    <SystemMessage>System message</SystemMessage>
+    <SystemMessage_UpdateInsert>Error updating!</SystemMessage_UpdateInsert>
+    <SystemMessage_NoMasterGrid>MasterGrid not found!</SystemMessage_NoMasterGrid>
+    <SystemMessage_Table>Table name not found.</SystemMessage_Table>
+    <SystemMessage_NoForeignkeys>Foreignkeys contains no records.</SystemMessage_NoForeignkeys>
+    <SystemMessage_Unique>Some fields have to be unique</SystemMessage_Unique>
+    <SystemMessage_MultiSelect>Error saving multiselect information!</SystemMessage_MultiSelect>
+    <SystemMessage_NoRecord>Record not found.</SystemMessage_NoRecord>
+    <SystemMessage_Foreignkey_tablename>The foreignkey tablename for column '{0}' is not specified.</SystemMessage_Foreignkey_tablename>
+    <SystemMessage_ManyToMany_datasource>Datasource error for the ManyToMany column '{0}'. </SystemMessage_ManyToMany_datasource>
+    <SystemMessage_DataSource_retreive>Failed to retreive number of records from the datasource.</SystemMessage_DataSource_retreive>
+    <SystemMessage_DataSource_NoTableName>There is no table, view, or sql statement (querylist) specified for the grid.</SystemMessage_DataSource_NoTableName>
+    <SystemMessage_Foreignkey_Incorrect>There are incorrect or missing parameters for a foreignkey.</SystemMessage_Foreignkey_Incorrect>
+    <SystemMessage_Foreignkey_noKey>The foreignkey table '{0}' does not contain any primarykeys.</SystemMessage_Foreignkey_noKey>
+    <SystemMessage_DataSource_failedSchema>The table schema could not be loaded from the datasource.</SystemMessage_DataSource_failedSchema>
+    <SystemMessage_DataSource_failedData>Failed to retrieve data from the datasource, use the debug property for more details.</SystemMessage_DataSource_failedData>
+    <SystemMessage_property_notfound>The property name '{0}' does not exist in the column '{1}'.</SystemMessage_property_notfound>
+    <SystemMessage_DataSource_NoConnectionString>A standard OLEDB, OleDbConnection(.Net) connectionstring property has not been set.</SystemMessage_DataSource_NoConnectionString>
+    <SystemMessage_DataSource_retrievedata>There is an error retrieving data from the server.</SystemMessage_DataSource_retrievedata>
+    <SystemMessage_DataSource_NoColumnName>All predefined columns must have a name.</SystemMessage_DataSource_NoColumnName>
+    <SystemMessage_DataSource_parseProperty>Error parsing the property</SystemMessage_DataSource_parseProperty>
+    <SystemMessage_DataSource_parseField>Error parsing the field</SystemMessage_DataSource_parseField>
+    <SystemMessage_Data_failedXML>There was an error loading the XML document.</SystemMessage_Data_failedXML>
+    <SystemMessage_Editor_noValidID>The ID (identifier) property can not start with '_' or contain blank spaces (' ').</SystemMessage_Editor_noValidID>
+    <SystemMessage_Update_data>Record could not be saved to datasource.</SystemMessage_Update_data>
+    <SystemMessage_ForeignkeyNoValueColumn>ValueColumn (WebGrid.Columns.Foreignkey) for '{0}' has no valid foreignkey.</SystemMessage_ForeignkeyNoValueColumn>
+    <SystemMessage_Editor_filemissing>WebGrid image file '{0}' is missing.</SystemMessage_Editor_filemissing>
+    <SystemMessage_Double_mathExpression>The mathematical expression for '{0}' is not valid.</SystemMessage_Double_mathExpression>
+    <SystemMessage_List_required>Please fill in.</SystemMessage_List_required>
+    <SystemMessage_List_Int>Numeric value is not valid.</SystemMessage_List_Int>
+    <SystemMessage_List_dec>Decimal value is not valid.</SystemMessage_List_dec>
+    <SystemMessage_List_date>No valid date. ({0}).</SystemMessage_List_date>
+    <SystemMessage_List_minLength>Value must not be more than {0} characters.</SystemMessage_List_minLength>
+    <SystemMessage_List_maxLength>Value must be at least {0} characters.</SystemMessage_List_maxLength>
+    <SystemMessage_List_email>Email is not valid.</SystemMessage_List_email>
+    <SystemMessage_List_validate>Value is not valid.</SystemMessage_List_validate>
+    <SystemMessage_UniqueValueRequired>Similiar value in field '{0}' already exists.</SystemMessage_UniqueValueRequired>
+    <SystemMessage_Required>Please fill in '{0}'.</SystemMessage_Required>
+    <SystemMessage_Int>Numeric value in '{0}' is not valid.</SystemMessage_Int>
+    <SystemMessage_Dec>Decimal value in '{0}' is not valid.</SystemMessage_Dec>
+    <SystemMessage_Date>Value in '{0}' is not a valid date ({1} is valid date).</SystemMessage_Date>
+    <SystemMessage_MinLength>'{0}' must be at least {1} characters long.</SystemMessage_MinLength>
+    <SystemMessage_MaxLength>'{0}' can not contain more than {1} characters.</SystemMessage_MaxLength>
+    <SystemMessage_Email>'{0}' is not a valid email address.</SystemMessage_Email>
+    <SystemMessage_Validate>Value in '{0}' has not the valid expression required for this column.</SystemMessage_Validate>
+    <PagerPrefix>Page: </PagerPrefix>
+    <PagerStatus>Displaying page {0} of {1}, records {2} to {3} of {4} records.</PagerStatus>
+    <EmptySearchFilter>Display all</EmptySearchFilter>
+    <DateTimeSearch>Create date/time search </DateTimeSearch>
+    <DateTimeSearchReset>Reset date/time search</DateTimeSearchReset>
+  </English>
+  <German>
+    <LanguageID>German</LanguageID>
+    <AllTitle>Gesamtanzahl der gefundenen DatensÀtze.</AllTitle>
+    <Update>Speichern</Update>
+    <UpdateClose>Speichern und Fenster schlie?en</UpdateClose>
+    <Updated>Aktualisiert</Updated>
+    <CloseWindow>Fenster schlieen</CloseWindow>
+    <Insert>Neuen Datensatz anlegen</Insert>
+    <ConfirmDelete>Wollen Sie diesen Datensatz wirklich löschen?</ConfirmDelete>
+    <ConfirmCopy>Wollen Sie diesen Datensatz wirklich kopieren?</ConfirmCopy>
+    <NewRecord>Neuen Datensatz anlegen</NewRecord>
+    <ShowRows>Angezeigte DatensÀtze {0} bis {1} von {2}</ShowRows>
+    <Search>Suchen</Search>
+    <EditRow>Datensatz bearbeiten</EditRow>
+    <DeleteRow>Datensatz löschen</DeleteRow>
+    <CopyRow>Datensatz kopieren</CopyRow>
+    <Required>Feld ist ein Pflichtfeld.</Required>
+    <First>Erste Seite</First>
+    <Last>Letzte Seite</Last>
+    <Next>NÀchste Seite</Next>
+    <Prev>Vorherige Seite</Prev>
+    <DatePicker>Klicken Sie auf das Bild um den Kalender zu öffnen.</DatePicker>
+    <SortIcon>Sortierung aufsteigend/absteigend.</SortIcon>
+    <UpdateRows>Aktualisierung durchgefÌhrt</UpdateRows>
+    <Attachment>Anhang herunterladen</Attachment>
+    <RemoveImage>Datei aus Datenbank löschen.</RemoveImage>
+    <TotalSummary>Gesamt</TotalSummary>
+    <Password>Kennwort:</Password>
+    <GenPassword>Kennwort erzeugen</GenPassword>
+    <ClickToActivate>Klicken Sie zum aktivieren.</ClickToActivate>
+    <ClickToActivateMenu>Klicken Sie um das MenÌ zu aktivieren.</ClickToActivateMenu>
+    <ClickToCloseMenu>Klicken Sie um das MenÌ zu schlie?en.</ClickToCloseMenu>
+    <SystemMessage>Systemmeldung</SystemMessage>
+    <SystemMessage_UpdateInsert>Fehler bei der Aktualisierung!</SystemMessage_UpdateInsert>
+    <SystemMessage_NoMasterGrid>MasterGrid nicht gefunden!</SystemMessage_NoMasterGrid>
+    <SystemMessage_Table>Tabelle nicht gefunden.</SystemMessage_Table>
+    <SystemMessage_NoForeignkeys>FremdschlÌssel enthÀlt keine DatensÀtze.</SystemMessage_NoForeignkeys>
+    <SystemMessage_Unique>Ein Feldname kann nur einmal verwendet werden</SystemMessage_Unique>
+    <SystemMessage_MultiSelect>Fehler beim Speichern mehrerer Informationen!</SystemMessage_MultiSelect>
+    <SystemMessage_NoRecord>Datensatz nicht gefunden.</SystemMessage_NoRecord>
+    <SystemMessage_Foreignkey_tablename>Die FremdschlÌsseltabelle fÌr die Spalte '{0}' wurde nicht angegeben.</SystemMessage_Foreignkey_tablename>
+    <SystemMessage_ManyToMany_datasource>Datenquellenfehler fÌr die ManyToMany Spalte '{0}'.</SystemMessage_ManyToMany_datasource>
+    <SystemMessage_DataSource_retreive>Fehler bei der Ermittlung der Anzahl der DatensÀtze aus der Datenquelle.</SystemMessage_DataSource_retreive>
+    <SystemMessage_DataSource_NoTableName>Es wurde keine Tabelle, Sicht oder SQL-Befehl fÌr die Ausgabe angegeben.</SystemMessage_DataSource_NoTableName>
+    <SystemMessage_Foreignkey_Incorrect>Es wurden falsche oder keine Parameter fÌr den FremdschlÌssel angegeben.</SystemMessage_Foreignkey_Incorrect>
+    <SystemMessage_Foreignkey_noKey>Die FremdschlÌsseltabelle '{0}' enthÀlt keinen PrimÀrschlÌssel.</SystemMessage_Foreignkey_noKey>
+    <SystemMessage_DataSource_failedSchema>Das Tabellenschema konnte nicht aus der Datenquelle geladen werden.</SystemMessage_DataSource_failedSchema>
+    <SystemMessage_DataSource_failedData>Fehler beim Empfangen der Daten aus der Datenquelle.</SystemMessage_DataSource_failedData>
+    <SystemMessage_property_notfound>Der Eigenschaftsname '{0}' existiert nicht in der Spalte '{1}'.</SystemMessage_property_notfound>
+    <SystemMessage_DataSource_NoConnectionString>Standard OLEDB, OleDbConnection(.Net) Verbindungszeichenfolge (connectionstring) wurde nicht gesetzt.</SystemMessage_DataSource_NoConnectionString>
+    <SystemMessage_DataSource_retrievedata>Es ist ein Fehler beim Empfangen der Daten vom Server aufgetreten.</SystemMessage_DataSource_retrievedata>
+    <SystemMessage_DataSource_NoColumnName>Alle vordefinierten Spalten mÌssen einen Namen haben.</SystemMessage_DataSource_NoColumnName>
+    <SystemMessage_DataSource_parseProperty>Fehler beim Auslesen der Eigenschaften</SystemMessage_DataSource_parseProperty>
+    <SystemMessage_DataSource_parseField>Fehler beim Auslesen des Feldes</SystemMessage_DataSource_parseField>
+    <SystemMessage_Data_failedXML>Beim Laden des XML-Dokumentes ist ein Fehler aufgetreten.</SystemMessage_Data_failedXML>
+    <SystemMessage_Editor_noValidID>Die IdentitÀtsspalte darf nicht mit '_' beginnen oder Leerschritte (' ') enthalten.</SystemMessage_Editor_noValidID>
+    <SystemMessage_Update_data>Der Datensatz konnte nicht in die Datenquelle geschrieben werden.</SystemMessage_Update_data>
+    <SystemMessage_ForeignkeyNoValueColumn>Wertespalte (WebGrid.Columns.Foreignkey) fÌr '{0}' enthÀlt keinen gÌltigen FremdschlÌssel.</SystemMessage_ForeignkeyNoValueColumn>
+    <SystemMessage_Editor_filemissing>WebGrid Bilddatei '{0}' fehlt.</SystemMessage_Editor_filemissing>
+    <SystemMessage_Double_mathExpression>Der mathematische Ausdruck fÌr '{0}' ist ungÌltig.</SystemMessage_Double_mathExpression>
+    <SystemMessage_List_required>Eingabe erforderlich.</SystemMessage_List_required>
+    <SystemMessage_List_Int>Numerischer Wert ist ungÌltig.</SystemMessage_List_Int>
+    <SystemMessage_List_dec>Dezimalwert ist ungÌltig.</SystemMessage_List_dec>
+    <SystemMessage_List_date>Kein gÌltiges Datum. ({0}).</SystemMessage_List_date>
+    <SystemMessage_List_minLength>Wert muss mehr als {0} Zeichen enthalten.</SystemMessage_List_minLength>
+    <SystemMessage_List_maxLength>Wert darf maximal {0} Zeichen enthalten.</SystemMessage_List_maxLength>
+    <SystemMessage_List_email>Email ist ungÌltig.</SystemMessage_List_email>
+    <SystemMessage_List_validate>Der eingegebene Wert ist nicht zulÀssig.</SystemMessage_List_validate>
+    <SystemMessage_UniqueValueRequired>Werte in Feld '{0}' mÌssen eindeutig sein. Der eingegebene Wert ist bereits vorhanden.</SystemMessage_UniqueValueRequired>
+    <SystemMessage_Required>Bitte fÌllen Sie das Feld '{0}' aus.</SystemMessage_Required>
+    <SystemMessage_Int>Numerischer Wert im Feld '{0}' ist ungÌltig.</SystemMessage_Int>
+    <SystemMessage_Dec>Dezimalwert in Feld '{0}' ist ungÌltig.</SystemMessage_Dec>
+    <SystemMessage_Date>Wert im Feld '{0}' ist kein gÌltiger Datumswert ({1} ist ein gÌltiger Datumswert).</SystemMessage_Date>
+    <SystemMessage_MinLength>Das Feld '{0}' muss mindestens {1} Zeichen enthalten.</SystemMessage_MinLength>
+    <SystemMessage_MaxLength>Das Feld '{0}' darf nicht mehr als {1} Zeichen enthalten.</SystemMessage_MaxLength>
+    <SystemMessage_Email>'{0}' ist keine gÌltige Emailadresse.</SystemMessage_Email>
+    <SystemMessage_Validate>Der eingegebene Wert im Feld '{0}' ist nicht zulÀssig.</SystemMessage_Validate>
+    <PagerPrefix>Seite wechseln:</PagerPrefix>
+    <PagerStatus>Angezeigt Seite {0} von {1}, Datensatz {2} bis {3} von {4} DatensÀtzen.</PagerStatus>
+  </German>
+</Language>

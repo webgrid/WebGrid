@@ -1,0 +1,261 @@
+﻿<table class="wgsystemmessagebox" width="750px">
+    <tr>
+        <td class="wgsystemmessagetitle">
+            System message
+        </td>
+    </tr>
+    <tr>
+        <td class="wgedit wgrow">
+            <a class="wglinkfield" href="http://www.webgrid.com/Examples/RequestLicense.aspx"><b>
+                Click here to receive your FREE WebGrid DataGrid license now.</b></a><br />
+        </td>
+    </tr>
+</table>
+<!--WebGrid grid starts rendering -->
+<table onkeydown="return SubmitGridOnEnter(event,'test_wgupdaterecord');" style="display: inline-block;"
+    width="750px" cellpadding="0" cellspacing="0" id="wgContent_test">
+    <tr>
+        <td>
+            <table width="750px" class="wgmaindetail" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td valign="top" class="wgtitleedit wgtitle" colspan="6">
+                        <table class="wgheader">
+                            <tr class="wgrow">
+                                <td class="wgtitle">
+                                    Orders
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="wgrow">
+                    <td align="Left" valign="middle" class=" wgdetailheader" style="width: 120px" id="testCustomerIDr0">
+                        CustomerID
+                    </td>
+                    <td valign="middle" class="wgrequiredcolumn " id="CustomerID0">
+                        &nbsp;
+                    </td>
+                    <td colspan="4" valign="middle" class="wgdetailcell">
+                        <input type="text" onblur="isChanged(this,'LightSteelBlue');" class="wgeditfield"
+                            style="text-align: Right;" value="" id="test____CustomerID" name="test____CustomerID" />
+                    </td>
+                </tr>
+                <tr class="wgrow">
+                    <td align="Left" valign="middle" class=" wgdetailheader" style="width: 120px" id="testEmployeeIdr0">
+                        EmployeeID
+                    </td>
+                    <td valign="middle" class="wgrequiredcolumn " id="EmployeeId0">
+                        &nbsp;
+                    </td>
+                    <td colspan="4" valign="middle" class="wgdetailcell">
+                        <select onblur="isChanged(this,'LightSteelBlue');" class="wgeditfield wgselectbox"
+                            id="test____EmployeeId" name="test____EmployeeId">
+                            <option value="2"></option>
+                            <option value="3">-- </option>
+                            <option value="8">-- </option>
+                            <option value="4">-- </option>
+                            <option value="1">-- </option>
+                            <option value="5">-- </option>
+                            <option value="9">---- </option>
+                            <option value="7">---- </option>
+                            <option value="6">---- </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="wgrow">
+                    <td align="Left" valign="middle" class=" wgdetailheader" style="width: 84px" id="testOrderIDr0">
+                        OrderID
+                    </td>
+                    <td valign="middle" class="wgrequiredcolumn " id="OrderID0">
+                        <img style="border: 0px" alt="Field is required." src="./images/required.gif" />
+                    </td>
+                    <td colspan="4" valign="middle" class="wgdetailcell">
+                        <input type="text" onblur="isChanged(this,'LightSteelBlue');" class="wgeditfield"
+                            style="text-align: Right;" value="" id="test____OrderID" name="test____OrderID" />
+                    </td>
+                </tr>
+                <tr class="wgrow">
+                    <td align="Left" valign="middle" class=" wgdetailheader" style="width: 108px" id="testOrderDater0">
+                        OrderDate
+                    </td>
+                    <td valign="middle" class="wgrequiredcolumn " id="OrderDate0">
+                        &nbsp;
+                    </td>
+                    <td colspan="4" valign="middle" class="wgdetailcell">
+                        <input type="text" onblur="isChanged(this,'LightSteelBlue');" class="wgeditfield"
+                            style="text-align: Right;" value="" id="test____OrderDate" name="test____OrderDate" /><span
+                                style="vertical-align: middle" class="wgnowrap">
+                                <img style="vertical-align: middle; height: 100%; border: 0px" alt="Click the image to open a datepicker."
+                                    src="./images/calendar.gif" id="test____OrderDate_trigger" /></span><script type="text/javascript">$(function() {
+                $("#test____OrderDate").datepicker({ dateFormat: 'dd.mm.yy',
+                onSelect: function(dateText, inst) { this.focus(); this.blur(); }
+                
+                });
+            });</script>
+                    </td>
+                </tr>
+                <tr class="wgrow">
+                    <td align="Left" valign="middle" class=" wgdetailheader" style="width: 140px" id="testRequiredDater0">
+                        RequiredDate
+                    </td>
+                    <td valign="middle" class="wgrequiredcolumn " id="RequiredDate0">
+                        &nbsp;
+                    </td>
+                    <td colspan="4" valign="middle" class="wgdetailcell">
+                        <input type="text" onblur="isChanged(this,'LightSteelBlue');" class="wgeditfield"
+                            style="text-align: Right;" value="" id="test____RequiredDate" name="test____RequiredDate" /><span
+                                style="vertical-align: middle" class="wgnowrap">
+                                <img style="vertical-align: middle; height: 100%; border: 0px" alt="Click the image to open a datepicker."
+                                    src="./images/calendar.gif" id="test____RequiredDate_trigger" /></span><script type="text/javascript">$(function() {
+                $("#test____RequiredDate").datepicker({ dateFormat: 'dd.mm.yy',
+                onSelect: function(dateText, inst) { this.focus(); this.blur(); }
+                
+                });
+            });</script>
+                    </td>
+                </tr>
+                <tr class="wgrow">
+                    <td align="Left" valign="middle" class=" wgdetailheader" style="width: 132px" id="testShippedDater0">
+                        ShippedDate
+                    </td>
+                    <td valign="middle" class="wgrequiredcolumn " id="ShippedDate0">
+                        &nbsp;
+                    </td>
+                    <td colspan="4" valign="middle" class="wgdetailcell">
+                        <input type="text" onblur="isChanged(this,'LightSteelBlue');" class="wgeditfield"
+                            style="text-align: Right;" value="" id="test____ShippedDate" name="test____ShippedDate" /><span
+                                style="vertical-align: middle" class="wgnowrap">
+                                <img style="vertical-align: middle; height: 100%; border: 0px" alt="Click the image to open a datepicker."
+                                    src="./images/calendar.gif" id="test____ShippedDate_trigger" /></span><script type="text/javascript">$(function() {
+                $("#test____ShippedDate").datepicker({ dateFormat: 'dd.mm.yy',
+                onSelect: function(dateText, inst) { this.focus(); this.blur(); }
+                
+                });
+            });</script>
+                    </td>
+                </tr>
+                <tr class="wgrow">
+                    <td align="Left" valign="middle" class=" wgdetailheader" style="width: 84px" id="testShipViar0">
+                        ShipVia
+                    </td>
+                    <td valign="middle" class="wgrequiredcolumn " id="ShipVia0">
+                        &nbsp;
+                    </td>
+                    <td colspan="4" valign="middle" class="wgdetailcell">
+                        <input type="text" onblur="isChanged(this,'LightSteelBlue');" class="wgeditfield"
+                            style="text-align: Right;" value="" id="test____ShipVia" name="test____ShipVia" />
+                    </td>
+                </tr>
+                <tr class="wgrow">
+                    <td align="Left" valign="middle" class=" wgdetailheader" style="width: 84px" id="testFreightr0">
+                        Freight
+                    </td>
+                    <td valign="middle" class="wgrequiredcolumn " id="Freight0">
+                        &nbsp;
+                    </td>
+                    <td colspan="4" valign="middle" class="wgdetailcell">
+                        <input type="text" onblur="isChanged(this,'LightSteelBlue');" class="wgeditfield"
+                            style="text-align: Right;" value="" id="test____Freight" name="test____Freight" />
+                    </td>
+                </tr>
+                <tr class="wgrow">
+                    <td align="Left" valign="middle" class=" wgdetailheader" style="width: 96px" id="testShipNamer0">
+                        ShipName
+                    </td>
+                    <td valign="middle" class="wgrequiredcolumn " id="ShipName0">
+                        &nbsp;
+                    </td>
+                    <td colspan="4" valign="middle" class="wgdetailcell">
+                        <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                            maxlength="40" value="" id="test____ShipName" name="test____ShipName" />
+                    </td>
+                </tr>
+                <tr class="wgrow">
+                    <td align="Left" valign="middle" class=" wgdetailheader" style="width: 132px" id="testShipAddressr0">
+                        ShipAddress
+                    </td>
+                    <td valign="middle" class="wgrequiredcolumn " id="ShipAddress0">
+                        &nbsp;
+                    </td>
+                    <td colspan="4" valign="middle" class="wgdetailcell">
+                        <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                            maxlength="60" value="" id="test____ShipAddress" name="test____ShipAddress" />
+                    </td>
+                </tr>
+                <tr class="wgrow">
+                    <td align="Left" valign="middle" class=" wgdetailheader" style="width: 96px" id="testShipCityr0">
+                        ShipCity
+                    </td>
+                    <td valign="middle" class="wgrequiredcolumn " id="ShipCity0">
+                        &nbsp;
+                    </td>
+                    <td colspan="4" valign="middle" class="wgdetailcell">
+                        <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                            maxlength="15" value="" id="test____ShipCity" name="test____ShipCity" />
+                    </td>
+                </tr>
+                <tr class="wgrow">
+                    <td align="Left" valign="middle" class=" wgdetailheader" style="width: 120px" id="testShipRegionr0">
+                        ShipRegion
+                    </td>
+                    <td valign="middle" class="wgrequiredcolumn " id="ShipRegion0">
+                        &nbsp;
+                    </td>
+                    <td colspan="4" valign="middle" class="wgdetailcell">
+                        <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                            maxlength="15" value="" id="test____ShipRegion" name="test____ShipRegion" />
+                    </td>
+                </tr>
+                <tr class="wgrow">
+                    <td align="Left" valign="middle" class=" wgdetailheader" style="width: 140px" id="testShipPostalCoder0">
+                        ShipPostalCode
+                    </td>
+                    <td valign="middle" class="wgrequiredcolumn " id="ShipPostalCode0">
+                        &nbsp;
+                    </td>
+                    <td colspan="4" valign="middle" class="wgdetailcell">
+                        <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                            maxlength="10" value="" id="test____ShipPostalCode" name="test____ShipPostalCode" />
+                    </td>
+                </tr>
+                <tr class="wgrow">
+                    <td align="Left" valign="middle" class=" wgdetailheader" style="width: 132px" id="testShipCountryr0">
+                        ShipCountry
+                    </td>
+                    <td valign="middle" class="wgrequiredcolumn " id="ShipCountry0">
+                        &nbsp;
+                    </td>
+                    <td colspan="4" valign="middle" class="wgdetailcell">
+                        <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                            maxlength="15" value="" id="test____ShipCountry" name="test____ShipCountry" />
+                    </td>
+                </tr>
+                <tr class="wgrow">
+                    <td class="wgtoolbardetail" colspan="6">
+                        <table cellspacing="0" width="100%" cellpadding="0">
+                            <tr>
+                                <td align="left">
+                                    <a onmouseover="return window.status='Click to activate.';return true;" onmouseout="window.status='';"
+                                        class="wgupdaterecord" id="test_wgupdaterecord" href="#" onclick=";return false;">
+                                        Save and close window</a> <a onmouseover="return window.status='Click to activate.';return true;"
+                                            onmouseout="window.status='';" class="wgclosewindow" href="#" onclick=";return false;">
+                                            Close Window</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!--WebGrid grid finished rendering -->
+
+<script type="text/javascript">$(document).ready( function() {
+                
+        
+            $("#wgContent_test").contextMenu({
+                    menu: 'test_Menu'
+                });
+            })</script>
+

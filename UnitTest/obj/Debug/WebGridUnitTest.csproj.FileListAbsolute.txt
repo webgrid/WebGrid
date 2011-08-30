@@ -1,0 +1,13 @@
+C:\WebGrid\Grid\UnitTest\bin\Debug\App_Data\Nwind.mdb
+C:\WebGrid\Grid\UnitTest\bin\Debug\WebGridUnitTest.exe
+C:\WebGrid\Grid\UnitTest\bin\Debug\WebGridUnitTest.pdb
+C:\WebGrid\Grid\UnitTest\bin\Debug\Anthem.dll
+C:\WebGrid\Grid\UnitTest\bin\Debug\WebGrid.dll
+C:\WebGrid\Grid\UnitTest\bin\Debug\WebGrid.pdb
+C:\WebGrid\Grid\UnitTest\bin\Debug\WebGrid.xml
+C:\WebGrid\Grid\UnitTest\bin\Debug\Anthem.pdb
+C:\WebGrid\Grid\UnitTest\bin\Debug\Anthem.xml
+C:\WebGrid\Grid\UnitTest\obj\Debug\ResolveAssemblyReference.cache
+C:\WebGrid\Grid\UnitTest\obj\Debug\WebGridUnitTest.exe
+C:\WebGrid\Grid\UnitTest\obj\Debug\WebGridUnitTest.pdb
+E:\Projects\WebGrid\UnitTest\obj\Debug\ResolveAssemblyReference.cache

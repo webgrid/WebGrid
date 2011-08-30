@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WebGrid2005">
+</Property><Property Name="Solution File" Value="E:\Projects\WebGrid\WebGrid2005.sln">
+</Property><Property Name="Date" Value="15. juni 2010">
+</Property><Property Name="Time" Value="15:39">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="1" Project="WebGrid2005" Source="WebGrid2005.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="WebGrid2005" Source="WebGrid2005.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WebGrid2005" Source="WebGrid2005.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WebGridUnitTest" Source="UnitTest\WebGridUnitTest.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WebGridUnitTest" Source="UnitTest\WebGridUnitTest.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="WebGrid2005.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="WebGrid2005.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WebGrid2005" Source="app.config" Description="File converted successfully. All &lt;supportedRuntime&gt; and &lt;requiredRuntime&gt; tags were removed to enable the project to build and run with Visual Studio 2005.">
+</Event><Event ErrorLevel="3" Project="WebGrid2005" Source="app.config" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WebGrid2005" Source="WebGrid2005.csproj" Description="The following Code Analysis rules were removed from the project: Microsoft.Rules.Managed.CA1807, Microsoft.Rules.Managed.CA1817, Microsoft.Rules.Managed.CA1818, Microsoft.Rules.Managed.CA1805, Microsoft.Rules.Managed.CA2209. They are obsolete in the current version of Visual Studio.">
+</Event><Event ErrorLevel="0" Project="WebGrid2005" Source="WebGrid2005.csproj" Description="Created rule set file &quot;E:\Projects\WebGrid\Migrated rules for WebGrid2005.ruleset&quot; for the &quot;Debug (Any CPU)&quot; configuration.">
+</Event><Event ErrorLevel="0" Project="WebGridUnitTest" Source="UnitTest\WebGridUnitTest.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

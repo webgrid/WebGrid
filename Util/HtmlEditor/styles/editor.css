@@ -1,0 +1,55 @@
+body
+{
+	padding: 1px 1px 1px 1px;
+	margin: 0px 0px 0px 0px;
+	background-color: #efefde;
+}
+
+#richEditor, .sourceEditor
+{
+	border: #696969 1px solid;
+	background-color: White;
+}
+#source
+{
+	border: none;
+	padding: 5px;
+	font-family: Monospace;
+}
+
+.bt_on, .bt_off, .bt_disabled, .combo_off, .combo_disabled
+{
+	border: #efefde 1px solid;
+	vertical-align: middle;
+}
+
+.bt_on
+{
+	border-color: #316ac5;
+	background-color: #c1d2ee;
+}
+
+.bt_off, .combo_off
+{
+	opacity: 0.70; /* Safari, Opera and Mozilla */
+	filter: alpha(opacity=70); /* IE */
+	/* -moz-opacity: 0.70; Mozilla (Old) */
+	background-color: #efefde;
+}
+
+.toolbar
+{
+	vertical-align: middle;
+}
+
+.selectList {
+	font-family: 'MS Sans Serif', sans-serif, Verdana, Arial;
+	font-size: 8pt !important;
+	font-weight: normal;
+	margin-top: 0px;
+	padding: 0;
+	display: inline;
+	vertical-align: top;
+	background-color: #efefde;
+	color: Black;
+}

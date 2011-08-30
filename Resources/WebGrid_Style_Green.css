@@ -1,0 +1,396 @@
+﻿/* No wrapping */
+.wgnowrap { white-space: nowrap; }
+
+/* This class is used in the "total" summary in WebGrid window. */
+.wgtotal
+{
+	padding:3px;
+	font-weight:bold;
+	border-top: 1px solid #238DCC;  
+	border-bottom: 2px solid #238DCC;  
+/*	background-color:#E1F1F8; */
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+span.wgtool {
+  position: relative; 
+  cursor: help;
+}
+ 
+span.wgtool span.wgtip {
+  display: none;        
+}
+
+/* WebGrid ToolTip */ 
+span.wgtool:hover span.wgtip {
+  display: block;
+  z-index: 100;
+  position: absolute;
+  top: 2.5em;
+  left: 0;
+  width: auto;
+  line-height: 1.2em;
+  padding: 3px 7px 4px 6px;
+  border: 1px solid #336;
+  background-color: #f7f7ee;
+  opacity: 0.70; /* Safari, Opera and Mozilla */
+  filter: alpha(opacity=70); /* IE */
+
+ /* font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;*/
+  color: #000;
+  text-align: left;
+}
+
+
+
+/* This class is used in one cell for the summary field in WebGrid window. */
+.wgtotalcell
+{
+	padding:3px;
+	font-weight:bold;
+	border-top: 1px solid #238DCC;  
+	border-bottom: 2px solid #238DCC;  
+/*	background-color:#E1F1F8; */
+	text-align:right;
+	vertical-align:middle;
+}
+/* This class is used when displaying images from a datasource */
+.wgimage 
+{
+	border: 1px solid #C0C0C0;
+	margin: 0px 0px 0px 0px;
+}
+
+/* Background colour for a row in WebGrid window (applies also to titles, headers, and more.) */
+tr.wgrow{
+
+ }
+
+/* Background colour for every second row in WebGrid (applies only to every second row in overview window)*/
+tr.wgrow2{
+ }
+
+/* This class is affects errors rendered by WebGrid window.*/
+.wgsystemmessagebox 
+{
+	color:red;
+	margin-bottom: 3px;
+	border: 1px solid #d2e6bd;
+	background-color: #F3F3F3;
+}
+
+
+
+/* This class is used where the error is rendered. */
+.wgsystemmessagetitle
+{
+	padding-left: 3px;
+	padding-right: 3px;
+	color:red;
+	font-weight:bold;
+}
+
+/* This class is affects the area where 'New Record', 'Update records', and pager are being rendered. */
+.wgmiscbox 
+{
+	padding-top:3px;
+}
+
+/* This class affects the NewRecord and update rows link*/
+.wgnewrecord ,.wgupdaterecords, .wgupdaterecord, .wgclosewindow, .wgerrorreport
+{
+	font-weight:bold;
+	color:#238DCC
+}
+
+/* This class encloses the entire editor in detail view (detail mode) */
+.wgmaindetail
+{
+	border: 1px solid #d2e6bd;
+	background-color: #F3F3F3;
+	background-repeat: repeat-y;
+/*	font-family:Tahoma;
+	font-size : 12px;*/
+}
+
+
+/* HACK FOR FIREFOX.. Makes firefox render the CSS correctly.*/
+.wgtitle, foo:-moz-any-link
+{
+border-right: 1px solid #d2e6bd;	
+}
+
+/* This class affects the title text in both grid and detail view */
+.wgtitle	
+{
+	background-color: #d2e6bd; /* was #e2eecd */
+	color: #496250;
+
+	font-weight: bold;
+
+}
+
+/* This class affects the title text in both grid and detail view */
+.wgtoolbargrid, .wgtoolbardetail	
+{
+	color: #666666;
+	background-color: #d2e6bd;
+	font-weight:bold;
+}
+/* This class affects the search box in toolbargrid */
+.wgsearchfield 
+{
+	width: 80px;
+	color: Black;
+}
+
+
+
+
+/* This class affects the heading text columns in grid view. */
+.wggridheader
+{
+	padding: 3px;
+	background-color: #d3d3d3;
+	color: #666666;
+
+	font-weight: bold;
+}
+
+/* This class affects a row, mainly used for padding.*/
+.wgrow
+{
+	padding-bottom: 2px;
+	padding-left: 3px; 
+	padding-top: 2px;
+	padding-right: 3px;
+}
+/*
+		
+ This class affects areas where you can edit datasource content */
+.wgeditfield 
+{
+	color:black;
+	text-align:justify;
+	vertical-align:middle;
+	color: #443;
+	outline: none;
+	border: 1px solid #aaa; 
+}
+
+
+.wgeditfield:hover,
+.wgeditfield:focus
+	{ 
+	border: 1px solid #ddd;
+
+	}
+
+/* This class encloses the entire editor in grid view (overview mode) */
+.wgmaingrid
+{
+	border: 1px solid #d2e6bd;
+	background-color: White;
+	background-repeat: repeat-y;
+/*	font-family:Tahoma;
+	font-size : 12px;*/
+}
+
+a.wgnewrecord, a.wgsearch, a.wgupdaterecord,a.wgupdaterecords, a.wgclosewindow, a.wgerrorreport
+{
+    text-decoration:none;
+	color: Black;
+}
+
+a.wgnewrecord:hover, a.wgsearch:hover, a.wgupdaterecord:hover, a.wgupdaterecords:hover , a.wgclosewindow:hover, a.wgerrorreport:hover
+{
+	text-decoration:underline;
+	color: Black;
+}
+
+
+/* Color on clickable columns */
+a.wglinkfield
+{
+	color: Black;
+	text-decoration:none;
+}
+
+/* Color on the heading */
+a.wggridheader {
+	color : Black;
+	text-decoration:none;
+}
+
+/* Class that affects the Pager (page navigation)  */
+a.wgpagerunselected:link, a.wgpagerunselected:visited,
+a.wgpagerall:link, a.wgpagerall:visited
+{
+	color: Black;
+	text-align:left;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+/* This class affects the selected item in the Pager (page navigation)*/
+.wgpagerselected
+{
+	color: Black;
+	text-align:left;
+	text-decoration:none;
+}
+/* This class affects heading all WebGrid hyperlinks */
+a.wggridheader:hover,a.wglinkfield:hover,a.wgpagerunselected:hover,
+a.wgpagerall:hover{
+	text-decoration: underline;
+}
+
+/*
+
+The Cascading stylesheets found below is menu system being used for
+a WebGrid window.
+*/
+
+/* This class is used to render background color for WebGrid menu 
+	choice that are not in use. */
+.wginactivemenu 
+{
+color: Black;
+padding: 0 7px 0 7px;
+/*font-weight: bold;
+font-family:Tahoma;
+font-size: 13px;*/
+}
+
+/* This class is used to render background color for WebGrid menu 
+	choice that are active. */
+.wgactivemenu 
+{
+color: Black;
+padding: 0 7px 0 7px;
+/*font-weight: bold;
+font-family:Tahoma;
+font-size: 13px;*/
+}
+
+.wgmenuspacing
+{
+	width: 3px;
+}
+
+/* this class is placeholder for the images and WebGrid menu */
+.wgmenunavigation a
+{
+text-decoration:none;
+color: Black;
+}
+
+/* this class is placeholder for the images and WebGrid menu */
+.wgmenunavigation a:hover
+{
+text-decoration:underline;
+}
+
+.wgcontainer  
+{
+	margin:0 0; 
+}
+
+.wgtextbutton, .wgclosewindow, .wgerrorreport, .wgnewrecord, .wgupdaterecord,.wgupdaterecords, .wgsearch,
+.wgPagerFirstTemplate, .wgPagerPreviousTemplate, .wgPagerNextTemplate, 
+.wgPagerLastTemplate, .wgpagerall, .wgpagerselected, .wgpagerunselected
+
+{
+	display: inline-table;
+	display: -moz-inline-box;
+	display: inline-block;
+	margin: 1px;
+	padding: 4px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #999999;
+	border-top-color: #cccccc;
+	border-left-color: #cccccc;
+	background-color: #eeeeee;
+	font-size: 90%;
+	background-repeat:no-repeat;
+    background-position: 3px 3px;
+}
+
+.wgclosewindow
+ {
+    background-image: url(./images/exit.gif);
+    padding-left: 22px;
+ }
+
+.wgerrorreport
+ {
+    background-image: url(./images/error.gif);
+    padding-left: 22px;
+ }
+
+
+.wgnewrecord
+ {
+    background-image: url(./images/add.gif);
+    padding-left: 22px;
+
+ }
+
+.wgupdaterecords
+ {
+    background-image: url(./images/updaterows.gif);
+    padding-left: 22px;
+
+ }
+
+.wgupdaterecord
+ {
+    background-image: url(./images/update.gif);
+    padding-left: 22px;
+
+ }
+ 
+.wgsearch
+ {
+    background-image: url(./images/find_text.gif);
+    padding-left: 22px;
+
+ }
+ 
+
+
+.wgtextbutton:link, .wgclosewindow:link, .wgerrorreport:link, .wgnewrecord:link, .wgupdaterecord:link, .wgupdaterecords:link,.wgsearch:link,
+.wgPagerFirstTemplate:link, .wgPagerPreviousTemplate:link, .wgPagerNextTemplate:link, 
+.wgPagerLastTemplate:link, .wgpagerall:link, .wgpagerselected:link, .wgpagerunselected:link
+{
+	text-decoration: none;
+	background-color: #eeeeee;
+}
+
+.wgtextbutton:visited, .wgclosewindow:visited, .wgerrorreport:visited, .wgnewrecord:visited, .wgupdaterecord:visited,.wgupdaterecords:visited, .wgsearch:visited,
+.wgPagerFirstTemplate:visited, .wgPagerPreviousTemplate:visited, .wgPagerNextTemplate:visited, 
+.wgPagerLastTemplate:visited, .wgpagerall:visited, .wgpagerselected:visited, .wgpagerunselected:visited
+{
+	text-decoration: none;
+	background-color: #eeeeee;
+}
+
+.wgtextbutton:active, .wgclosewindow:active, .wgerrorreport:active, .wgnewrecord:active, .wgupdaterecord:active,.wgupdaterecords:active, .wgsearch:active,
+.wgPagerFirstTemplate:active, .wgPagerPreviousTemplate:active, .wgPagerNextTemplate:active, 
+.wgPagerLastTemplate:active, .wgpagerall:active, .wgpagerselected:active, .wgpagerunselected:active
+{
+	text-decoration: none;
+}
+
+.wgtextbutton:hover, .wgclosewindow:hover, .wgerrorreport:hover, .wgnewrecord:hover, .wgupdaterecord:hover,.wgupdaterecords:hover, .wgsearch:hover,
+.wgPagerFirstTemplate:hover, .wgPagerPreviousTemplate:hover, .wgPagerNextTemplate:hover, 
+.wgPagerLastTemplate:hover, .wgpagerall:hover, .wgpagerselected:hover, .wgpagerunselected:hover
+{
+	text-decoration: underline;
+	background-color: #dddddd;
+}

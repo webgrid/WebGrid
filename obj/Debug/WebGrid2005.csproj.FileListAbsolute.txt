@@ -1,0 +1,10 @@
+E:\Projects\WebGridGIT\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\WebGridGIT\obj\Debug\WebGrid.Properties.Resources.resources
+E:\Projects\WebGridGIT\obj\Debug\ResGen.read.1.tlog
+E:\Projects\WebGridGIT\obj\Debug\ResGen.write.1.tlog
+E:\Projects\WebGridGIT\bin\Debug\WebGrid.dll.config
+E:\Projects\WebGridGIT\bin\Debug\WebGrid.dll
+E:\Projects\WebGridGIT\bin\Debug\WebGrid.pdb
+E:\Projects\WebGridGIT\bin\Debug\webgrid.Xml
+E:\Projects\WebGridGIT\obj\Debug\WebGrid.dll
+E:\Projects\WebGridGIT\obj\Debug\WebGrid.pdb

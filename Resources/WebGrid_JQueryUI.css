@@ -1,0 +1,419 @@
+﻿.wgmaingrid, .wgmaindetail, .wgsystemmessagebox
+{
+    text-align:left;
+    vertical-align:middle;
+    position:relative;
+}
+.wgAjaxLoaderContent
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+
+}
+.wgAjaxLoader
+{
+       visibility:hidden; 
+}
+.wgloading
+        {
+            background-color: #CF4342;
+            color: White;
+            padding-left: 5px;
+            padding-right: 5px;
+            position: absolute;
+            font-size: 15px;
+            font-weight: normal;
+            color: #ffffff;
+            right: 10px;
+            top: 10px;
+            z-index: 9999;
+        }
+        /* This class affects the header of the grid (applies to grid view) */.wgheader
+        {
+            padding: 0 0 0 0;
+            border-spacing: 0px;
+            border-collapse: collapse;
+            margin: 0 0 0 0;
+            width: 100%;
+        }
+        /* Any rows in webGrid.*/.wgrow, .wgtoolbargrid, .wgtoolbardetail
+        {
+            padding-bottom: 2px;
+            padding-left: 3px;
+            padding-top: 2px;
+            padding-right: 3px;
+        }
+        .wgsearchfieldborder
+        {
+            padding: 0 0 0 0;
+            border-spacing: 0px;
+            border-collapse: separate;
+        }
+        /* This class affects the search box in toolbargrid */.wgsearchfield
+        {
+            width: 80px;
+            color: Black;
+        }
+        /* This class affects the header of the grid (applies to grid view) */.wgheader
+        {
+            padding: 0 0 0 0;
+            border-spacing: 0px;
+            border-collapse: collapse;
+            margin: 0 0 0 0;
+            width: 100%;
+        }
+        /* This affects the tables rendered for 'RecordsPerRow' property.*/.wgrecordsperrow
+        {
+            padding: 0 0 0 0;
+            border-spacing: 0px;
+            border-collapse: separate;
+            width: 100%;
+        }
+        /* Radiobuttons for Foreignkey */.wgradiobuttons
+        {
+            padding: 0 0 0 0;
+            border-spacing: 0px;
+            border-collapse: separate;
+        }
+        /* Many to Many border */.wgmanytomany
+        {
+            border: 0px;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+        /* This class affects the heading text columns in grid view. */
+        .wggridheader
+        {
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            height: 100%;
+        }
+        /* Cells*/
+        .wgdetailcell, .wggridcell, .wgdetailheader, .wgheadercell, .wgsystemmessagecell
+        {
+            padding-bottom: 3px;
+            padding-left: 4px;
+            padding-top: 3px;
+            padding-right: 1px;
+        }
+        .wgheadercell a
+        {
+            float: left;
+        }
+        /* This class affects column that spans over columns or rows */.wgrowspan
+        {
+            padding: 0 0 0 0;
+            width: 100%;
+        }
+        
+        /* This class is used when displaying images in WebGrid */
+.wgimage 
+{
+	border: 1px solid #C0C0C0;
+	margin: 0px 0px 0px 0px;
+}
+ /* Padding for menu items */       
+.wgmenu td
+{
+	padding-right: 2px;
+}
+
+     /*This class affects areas where you can edit datasource content */
+.wgeditfield
+        {
+            vertical-align: middle;
+            outline: none;
+        }
+.wgthead
+        {
+            /*internet explorer fix for background images spanning over thead or tbody*/
+            background-position: expression(-this.offsetLeft + ' ' + -this.offsetTop);
+        }
+       
+        /* Generic context menu styles */
+.wgcontextMenu
+        {
+            position: absolute;
+            width: 150px;
+            z-index: 99999;
+            border: solid 1px #CCC;
+            background: #EEE;
+            padding: 0px;
+            margin: 0px;
+            display: none;
+        }
+        .wgcontextMenu LI
+        {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        .wgcontextMenu A
+        {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            line-height: 20px;
+            height: 20px;
+            background-position: 6px center;
+            background-repeat: no-repeat;
+            outline: none;
+            padding: 1px 5px;
+            padding-left: 28px;
+        }
+        .wgcontextMenu LI.hover A
+        {
+            color: #FFF;
+            background-color: #3399FF;
+            padding-right: 20px;
+        }
+        .wgcontextMenu LI.disabled A
+        {
+            color: #AAA;
+            cursor: default;
+        }
+        .wgcontextMenu LI.hover.disabled A
+        {
+            background-color: transparent;
+        }
+        .wgcontextMenu LI.separator
+        {
+            border-top: solid 1px #CCC;
+        }
+        
+        
+        
+        
+        /*
+	Adding Icons
+	
+	You can add icons to the context menu by adding
+	classes to the respective LI element(s)
+*/.wgcontextMenu LI.wgcontextmenuexport A
+        {
+            background-image: url(<%=WebResource("WebGrid.Resources.images.export.gif")%>);
+        }
+        .wgcontextMenu LI.wgcontextmenurefresh A
+        {
+            background-image: url(<%=WebResource("WebGrid.Resources.images.refresh.gif")%>);
+        }
+        .wgcontextMenu LI.wgcontextmenuhelp A
+        {
+            background-image: url(<%=WebResource("WebGrid.Resources.images.help.gif")%>);
+        }
+        .wgcontextMenu LI.wgcontextmenucollapse A
+        {
+            background-image: url(<%=WebResource("WebGrid.Resources.images.exit.gif")%>);
+        }
+        .wgcontextMenu LI.wgcontextmenuprint A
+        {
+            background-image: url(<%=WebResource("WebGrid.Resources.images.print.gif")%>);
+        }
+        .wgcontextMenu LI.wgcontextmenuabout A
+        {
+        }
+        .wgtooltipselected
+        {
+            font-weight: bolder;
+        }
+        
+
+.ui-button
+        {
+            outline: 0;
+            margin: 0 2px 0 0;
+            padding: 0px 4px;
+            text-decoration: none !important;
+            cursor: pointer;
+            position: relative;
+            text-align: center;
+        }
+        
+        /*
+    ColorBox Core Style
+    The following rules are the styles that are consistant between themes.
+    Avoid changing this area to maintain compatability with future versions of ColorBox.
+*/
+
+/*Used for WebGrid userinface dialogs*/
+.wguidialog
+{
+    float: left; 
+    margin: 20px 7px 7px 7px;
+    font-size: 12px;
+    vertical-align:middle;
+}
+
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative; overflow:visible;}
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadedContent iframe{display:block; width:100%; height:100%; border:0;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+
+/* 
+    ColorBox example user style
+    The following rules are ordered and tabbed in a way that represents the
+    order/nesting of the generated HTML, so that the structure easier to understand.
+*/
+#cboxOverlay{background:#fff;}
+
+#colorbox{}
+#cboxContent{margin-top:32px;}
+#cboxLoadedContent{background:#fff; padding:1px;border-style:solid; border-color:#000; border-width:1px;}
+#cboxLoadingGraphic{background:url(<%=WebResource("WebGrid.Resources.images.loading.gif")%>) center center no-repeat;}
+#cboxLoadingOverlay{background:#000;}
+#cboxTitle{position:absolute; top:-22px; left:0; color:#000;}
+#cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
+#cboxSlideshow, #cboxPrevious, #cboxNext, #cboxClose{text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(<%=WebResource("WebGrid.Resources.images.controls.png")%>) 0 0 no-repeat;}
+#cboxPrevious{background-position:0px 0px; right:44px;}
+#cboxPrevious.hover{background-position:0px -25px;}
+#cboxNext{background-position:-25px 0px; right:22px;}
+#cboxNext.hover{background-position:-25px -25px;}
+#cboxClose{background-position:-50px 0px; right:0;}
+#cboxClose.hover{background-position:-50px -25px;}
+.cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious{right:66px;}
+.cboxSlideshow_on #cboxSlideshow{background-position:-75px -25px; right:44px;}
+.cboxSlideshow_on #cboxSlideshow.hover{background-position:-100px -25px;}
+.cboxSlideshow_off #cboxSlideshow{background-position:-100px 0px; right:44px;}
+.cboxSlideshow_off #cboxSlideshow.hover{background-position:-75px -25px;}
+
+div.jGrowl {
+	padding: 			10px;
+	z-index: 			9999;
+	color: 				#fff;
+}
+/** Special IE6 Style Positioning **/
+div.ie6 {
+	position: 			absolute;
+}
+div.ie6.top-right {
+	right: 				auto;
+	bottom: 			auto;
+	left: 				expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+  	top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+div.ie6.top-left {
+	left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+div.ie6.bottom-right {
+	left: 				expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: 				expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+div.ie6.bottom-left {
+	left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: 				expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+div.ie6.center {
+	left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+	width: 				100%;
+}
+/** Normal Style Positions **/
+body > div.jGrowl {
+	position:			fixed;
+}
+body > div.jGrowl.top-left {
+	left: 				0px;
+	top: 				0px;
+}
+body > div.jGrowl.top-right {
+	right: 				0px;
+	top: 				0px;
+}
+body > div.jGrowl.bottom-left {
+	left: 				0px;
+	bottom:				0px;
+}
+body > div.jGrowl.bottom-right {
+	right: 				0px;
+	bottom: 			0px;
+}
+body > div.jGrowl.center {
+	top: 				0px;
+	width: 				50%;
+	left: 				25%;
+}
+/** Cross Browser Styling **/
+div.center div.jGrowl-notification, div.center div.jGrowl-closer {
+	margin-left: 		auto;
+	margin-right: 		auto;
+}
+div.jGrowl div.jGrowl-notification, div.jGrowl div.jGrowl-closer {
+	background-color: 		#000;
+	opacity: 				.85;
+	filter: 				alpha(opacity = 85);
+	zoom: 					1;
+	width: 					235px;
+	padding: 				10px;
+	margin-top: 			5px;
+	margin-bottom: 			5px;
+	font-family: 			Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 				12px;
+	text-align: 			left;
+	display: 				none;
+	-moz-border-radius: 	5px;
+	-webkit-border-radius:	5px;
+}
+div.jGrowl div.jGrowl-notification {
+	min-height: 			40px;
+}
+div.jGrowl div.jGrowl-notification div.header {
+	font-weight: 			bold;
+	font-size:				10px;
+}
+div.jGrowl div.jGrowl-notification div.close {
+	z-index:				99;
+	float: 					right;
+	font-weight: 			bold;
+	font-size: 				12px;
+	cursor:					pointer;
+}
+div.jGrowl div.jGrowl-closer {
+	height: 				15px;
+	padding-top: 			4px;
+	padding-bottom: 		4px;
+	cursor: 				pointer;
+	font-size:				11px;
+	font-weight: 			bold;
+	text-align: 			center;
+}
+/** Hide jGrowl when printing **/
+@media print {
+	div.jGrowl {
+		display: 			none;
+	}
+}
+
+.ui-datepicker-trigger { padding-left: 3px; vertical-align:middle; text-align:left}
+
+
+/* Selectmenu
+----------------------------------*/
+.ui-selectmenu { display: block; position:relative; height:1.3em; text-decoration: none; overflow:hidden;min-width:50px}
+.ui-selectmenu-icon { position:absolute; right:6px; margin:-8px -6px 0px 0px; top: 50%; }
+.ui-selectmenu-menu { padding:0; margin:0; list-style:none; position:absolute; top: 50%; visibility: hidden; overflow: auto;z-index: 99999;min-width:50px;}
+.ui-selectmenu-open { visibility: visible; }
+.ui-selectmenu-menu-popup { margin-top: -1px; }
+.ui-selectmenu-menu-dropdown { }
+.ui-selectmenu-menu li { padding:0; margin:0; display: block; border-top: 1px dotted transparent; border-bottom: 1px dotted transparent; border-right-width: 0 !important; border-left-width: 0 !important; font-weight: normal !important; }
+.ui-selectmenu-menu li a,.ui-selectmenu-status {line-height: 1.4em; display:block; padding: 0px 10px 0px 10px; outline:none; text-decoration:none; }
+.ui-selectmenu-menu li.ui-selectmenu-hasIcon a,
+.ui-selectmenu-hasIcon .ui-selectmenu-status { padding-left: 20px; position: relative; margin-left: 5px; }
+.ui-selectmenu-menu li .ui-icon, .ui-selectmenu-status .ui-icon { position: absolute; top: 1em; margin-top: -8px; left: 0; }
+.ui-selectmenu-status { line-height: 1.4em; }
+.ui-selectmenu-open li.ui-selectmenu-item-focus a {  }
+.ui-selectmenu-open li.ui-selectmenu-item-selected { }
+.ui-selectmenu-menu li span,.ui-selectmenu-status span { display:block; margin-bottom: .2em; }
+.ui-selectmenu-menu li .ui-selectmenu-item-header { font-weight: bold; }
+.ui-selectmenu-menu li .ui-selectmenu-item-content {  }
+.ui-selectmenu-menu li .ui-selectmenu-item-footer { opacity: .8; }
+/*for optgroups*/
+.ui-selectmenu-menu .ui-selectmenu-group { }
+.ui-selectmenu-menu .ui-selectmenu-group .ui-selectmenu-group-label { line-height: 1.4em; display:block; padding:.6em .5em 0; font-weight: bold; }
+.ui-selectmenu-menu .ui-selectmenu-group ul { margin: 0; padding: 0; }

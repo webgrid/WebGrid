@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title>Insert / Edit Image</title>
+
+    <script type="text/javascript" language="javascript">
+
+var Engine;
+var EditorWindow;
+var imageNode;
+var imagePath;
+window.onload = Load;
+
+function Load()
+{
+	if(!window.Editor)
+	{
+		window.Editor = window.opener.Editor; //.Engine;
+	}
+	Engine = window.Editor.Engine;
+	imageNode = Engine.Utils.GetSelectedElement();
+	
+	if ( imageNode && 'img' != imageNode.tagName.toLowerCase() && !( 'input' == imageNode.tagName.toLowerCase() && 'image' == imageNode.type))
+	{
+		imageNode = null ;
+	}
+	if(null != imageNode)
+		BindImageInfo();
+	
+	imagePath = this.Tag.TagValue;
+}
+
+function Ok()
+{
+	var imageNode = Engine.CreateImage();
+	SetLinkAttributes(imageNode);
+	window.close();
+}
+function Cancel()
+{
+	window.close();
+}
+function BindImageInfo()
+{
+	SetElementValue("url", Engine.Utils.GetAttribute(imageNode,"src"));
+	SetElementValue("alt", Engine.Utils.GetAttribute(imageNode,"alt"));
+	SetElementValue("width", Engine.Utils.GetAttribute(imageNode,"width"));
+	SetElementValue("height", Engine.Utils.GetAttribute(imageNode,"height"));
+	SetElementValue("border", Engine.Utils.GetAttribute(imageNode,"border"));
+	SetElementValue("align", Engine.Utils.GetAttribute(imageNode,"align"));
+}
+function SetElementValue(elementName, value) 
+{
+	document.forms[0].elements[elementName].value = value;
+}
+function GetElementValue(elementName) 
+{
+	return document.forms[0].elements[elementName].value;
+}
+
+function SetLinkAttributes(elm) 
+{
+	Engine.Utils.SetAttribute(elm,"src",GetElementValue("url"));
+	Engine.Utils.SetAttribute(elm,"alt",GetElementValue("alt"));
+	Engine.Utils.SetAttribute(elm,"width",GetElementValue("width"));
+	Engine.Utils.SetAttribute(elm,"height",GetElementValue("height"));
+	Engine.Utils.SetAttribute(elm,"border",GetElementValue("border"));
+	Engine.Utils.SetAttribute(elm,"align",GetElementValue("align"));
+}
+
+function Browse()
+{
+	var height = 400;
+	var width = 300;
+	var top  = (parent.screen.height - height)/2;
+	var left = (parent.screen.width  - width)/2;
+	var fileBrowser = window.open("htmleditor.aspx?res=imagebrowser&id=" + imagePath,"","width="+width+",height=" + height+
+						",top=" + top + ",left=" + left);
+}
+    </script>
+
+    <style type="text/css">
+		body
+{
+	margin: 0px;
+	padding: 10px;
+	background-color: #ece9d8;
+}
+body, td, input, select /*, textarea*/
+{
+	font-size: 11px;
+	font-family: 'Microsoft Sans Serif' , Arial, Helvetica, Verdana;
+}
+textarea
+{
+	background-color: white;
+}
+.button
+{
+	border: black 1px solid;
+	background-color: #F3F3EE;
+}
+.header
+{
+	 font-weight: bold;
+	 font-size: 14pt;
+}
+</style>
+</head>
+<body>
+    <form>
+        <div id="header">
+            <table border="0" cellpadding="4" cellspacing="0" width="100%" id="Table1">
+                <tr>
+                    <td id="HeaderTitle" class="header">
+                        Insert/Edit Image</td>
+                </tr>
+            </table>
+        </div>
+        <div id="general_panel">
+            <table border="0" cellpadding="4" cellspacing="0">
+                <tr>
+                    <td colspan="2">
+                        <label id="urllabel" for="url">
+                            Image URL:</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="url" name="url" type="text" value="" style="width: 220px" /></td>
+                    <td width="">
+                        <img src="htmleditor.aspx?res=image&id=browse.gif" alt="Browse..." onclick="return Browse();" /></td>
+                </tr>
+            </table>
+            <table border="0" cellpadding="4" cellspacing="0">
+                <tr>
+                    <td>
+                        <label id="altlable" for="url">
+                            Alternative Text:</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="alt" name="alt" type="text" value="" style="width: 250px" /></td>
+                </tr>
+            </table>
+            <table border="0" cellpadding="4" cellspacing="0" id="Table3">
+                <tr>
+                    <td nowrap="nowrap" width="40">
+                        <label id="widthlabel" for="width">
+                            Width:</label></td>
+                    <td nowrap="nowrap" width="40">
+                        <input id="width" name="width" type="text" value="" style="width: 30px" /></td>
+                    <td nowrap="nowrap" width="40">
+                        <label id="heightlabel" for="height">
+                            Height:</label></td>
+                    <td nowrap="nowrap" width="110">
+                        <input id="height" name="height" type="text" value="" style="width: 30px" /></td>
+                </tr>
+            </table>
+            <table border="0" cellpadding="4" cellspacing="0" id="Table4">
+                <tr>
+                    <td width="40">
+                        <label id="borderlabel" for="border">
+                            Border:</label></td>
+                    <td width="40">
+                        <input id="border" name="border" type="text" value="" style="width: 30px" /></td>
+                    <td width="40">
+                        <label id="alignlabel" for="align">
+                            Align:</label></td>
+                    <td width="110">
+                        <select id="align" name="align">
+                            <option value=""></option>
+                            <option value="baseline">Baseline</option>
+                            <option value="top">Top</option>
+                            <option value="middle">Middle</option>
+                            <option value="bottom">Bottom</option>
+                            <option value="texttop">TextTop</option>
+                            <option value="absmiddle">Absolute Middle</option>
+                            <option value="absbottom">Absolute Bottom</option>
+                            <option value="left">Left</option>
+                            <option value="right">Right</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <div id="buttons" align="left">
+            <table border="0" cellpadding="4" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <input type="button" class="button" style="width: 73px; height: 21px;" id="btOk"
+                            name="btOk" value="Ok" onclick="return Ok();" />
+                        <input type="button" class="button" style="width: 73px; height: 21px;" id="btCancel"
+                            name="btCancel" value="Cancel" onclick="return Cancel();" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

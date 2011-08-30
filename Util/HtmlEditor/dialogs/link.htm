@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title>Create / Edit Link</title>
+
+    <script type="text/javascript">
+			var Engine;
+var EditorWindow;
+var linkNode;
+
+	
+window.onload = Load;
+
+function Load()
+{
+	if(!window.Editor)
+	{
+		window.Editor = window.opener.Editor; 
+	}
+	Engine = window.Editor.Engine;
+	linkNode = Engine.Utils.MoveToAncestorNode('a');
+	if(linkNode)
+	{
+		BindFormInfo();
+	}
+}
+
+function Ok()
+{
+	if(!linkNode)
+	{
+		var links = Engine.CreateLink();
+		for(var i=0; i<links.length; i++) 
+		{
+			var link = links[i];
+			SetLinkAttributes(link);
+		}
+	}else
+	{
+		SetLinkAttributes(linkNode);
+	}
+	window.opener.focus();
+	window.close();
+}
+
+function Cancel()
+{
+	window.close() ;
+}
+
+function BindFormInfo()
+{
+	SetElementValue("href", Engine.Utils.GetAttribute(linkNode,"href"));
+	SetElementValue("targetList", Engine.Utils.GetAttribute(linkNode,"target"));
+	SetElementValue("title", Engine.Utils.GetAttribute(linkNode,"title"));
+	SetElementValue("class", Engine.Utils.GetAttribute(linkNode,"class"));
+}
+
+// TODO: move to the base dialog helper class
+function SetElementValue(elementName, value) 
+{
+	document.forms[0].elements[elementName].value = value;
+}
+function GetElementValue(elementName) 
+{
+	return document.forms[0].elements[elementName].value;
+}
+
+function SetLinkAttributes(link) {
+	//var formObj = document.forms[0];
+	//var href = formObj.href.value;
+	//var target = getSelectValue(formObj, 'targetlist');
+
+	// Make anchors absolute
+	//if (href.charAt(0) == '#' && tinyMCE.getParam('convert_urls'))
+	//	href = tinyMCE.settings['document_base_url'] + href;
+
+	//setAttrib(elm, 'href', convertURL(href, elm));
+	Engine.Utils.SetAttribute(link,"href",GetElementValue("href"));
+	Engine.Utils.SetAttribute(link,"target",GetElementValue("targetList"));
+	Engine.Utils.SetAttribute(link,"title",GetElementValue("title"));
+	Engine.Utils.SetAttribute(link,"class",GetElementValue("class"));
+}
+    </script>
+
+    <style type="text/css">
+		body
+{
+	margin: 0px;
+	padding: 10px;
+	background-color: #ece9d8;
+}
+body, td, input, select /*, textarea*/
+{
+	font-size: 11px;
+	font-family: 'Microsoft Sans Serif' , Arial, Helvetica, Verdana;
+}
+textarea
+{
+	background-color: white;
+}
+.button
+{
+	border: black 1px solid;
+	background-color: #F3F3EE;
+}
+.header
+{
+	 font-weight: bold;
+	 font-size: 14pt;
+}
+		</style>
+</head>
+<body>
+    <form>
+        <div id="header">
+            <table border="0" cellpadding="4" cellspacing="0" width="100%">
+                <tr>
+                    <td id="HeaderTitle" class="header">
+                        Create/Edit Link</td>
+                </tr>
+            </table>
+        </div>
+        <div id="general_panel">
+            <table border="0" cellpadding="4" cellspacing="0">
+                <tr>
+                    <td nowrap="nowrap" width="50">
+                        <label id="hreflabel" for="href">
+                            URL:</label></td>
+                    <td>
+                        <input id="href" name="href" type="text" value="" style="width: 250px" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="targetlistlabel" for="targetlist">
+                            Target:</label></td>
+                    <td id="targetlistcontainer">
+                        <select id="targetList" name="targetList" style="width: 150px">
+                            <option value="">&nbsp;</option>
+                            <option value="_blank">New Window</option>
+                            <option value="_top">Topmost Window</option>
+                            <option value="_self">Same Window</option>
+                            <option value="_parent">Parent Window</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap">
+                        <label id="titlelabel" for="title">
+                            Title:</label></td>
+                    <td>
+                        <input id="title" name="title" type="text" value="" style="width: 250px" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="classlabel" for="classlist">
+                            Class:</label></td>
+                    <td>
+                        <input id="class" name="class" type="text" value="" style="width: 150px" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br/>
+        <div id="buttons" align="left">
+            <table border="0" cellpadding="4" cellspacing="0" width="100%" id="Table1">
+                <tr>
+                <td>
+                    <input type="button" class="button" style="width: 73px; height: 21px;" id="btOk"
+                        name="btOk" value="Ok" onclick="return Ok();" />
+                    <input type="button" class="button" style="width: 73px; height: 21px;" id="btCancel"
+                        name="btCancel" value="Cancel" onclick="return Cancel();" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

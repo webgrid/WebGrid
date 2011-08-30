@@ -1,0 +1,277 @@
+﻿/* This class is used in the summary fields for WebGrid. */
+.wgtotal
+{
+	padding:3px;
+	font-weight:bold;
+	border-top: 1px solid #999999;  
+	border-bottom: 2px solid #999999;  
+	background-color:#999999;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+span.wgtool {
+  position: relative; 
+  cursor: help;
+}
+ 
+span.wgtool span.wgtip {
+  display: none;        
+}
+
+/* WebGrid ToolTip */ 
+span.wgtool:hover span.wgtip {
+  display: block;
+  z-index: 100;
+  position: absolute;
+  top: 2.5em;
+  left: 0;
+  width: auto;
+  line-height: 1.2em;
+  padding: 3px 7px 4px 6px;
+  border: 1px solid #336;
+  background-color: #f7f7ee;
+  opacity: 0.70; /* Safari, Opera and Mozilla */
+  filter: alpha(opacity=70); /* IE */
+
+/*  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal; */
+  color: #000;
+  text-align: left;
+}
+
+/* This class is used in one cell for the summary field in WebGrid. */
+.wgtotalcell
+{
+
+	padding:3px;
+	font-weight:bold;
+	border-top: 1px solid #999999;  
+	border-bottom: 2px solid #999999;  
+	background-color:#999999;
+	text-align:right;
+	vertical-align:middle;
+}
+/* This class that encloses the builtin menus for WebGrid */
+.wgmenu
+{
+	border-width: thick;
+}
+
+.wgimage 
+{
+	margin: 0px 0px 0px 0px;
+}
+
+/* Background colour for a row in WebGrid */
+tr.wgrow{background-color:#999999;}
+/* Background colour for every second row in WebGrid */
+tr.wgrow2{background-color:#999999; }
+
+/* This class is enclosing the entire error box*/
+.wgsystemmessagebox 
+{
+	margin-bottom: 3px;
+}
+
+/* This class is used where the error is rendered */
+.wgsystemmessagetitle
+{
+	padding-left: 3px;
+	padding-right: 3px; 
+	color:red;
+	font-weight:bold;
+}
+
+/* This class is enclosing the area where 'New Record', 'Update records',
+and pager are rendered */
+.wgmiscbox 
+{
+	padding-top:3px;
+}
+
+/* This class affects the NewRecord and update rows link*/
+.wgnewrecord 
+{
+	font-weight:bold;
+	color:#999999
+}
+
+/* This class encloses the entire editor in detail view (detail mode) */
+.wgmaindetail
+{
+	background-color:#999999;
+	border: 1px solid Gray;
+	border-collapse:collapse;
+}
+
+/* HACK FOR FIREFOX.. Makes firefox render the CSS correctly.*/
+.wgtitle, foo:-moz-any-link
+{
+border-right: 1px solid Gray;	
+}
+
+/* This class affects the Title text in both grid and detail view */
+.wgtitle	
+{
+	color: white;
+  	background-color: Gray;
+	font-weight:bold;
+	
+}
+
+/* This class affects the title text in both grid and detail view */
+.wgtoolbargrid, .wgtoolbardetail	
+{
+	color:White;
+	background: Gray;
+	font-weight:bold;
+}
+/* This class affects the search box in toolbargrid */
+.wgsearch 
+{
+	width: 80px;
+	height: 90%;
+	padding:3px;
+	margin: 2px 0px 2px 0px;
+}
+
+
+/* This class affects the heading text columns in grid view. */
+.wggridheader
+{
+	padding: 3px; 
+	background-color: Gray;
+	color: white;
+	font-weight:bold;
+}
+
+/* This class affects a row */
+.wgrow
+{
+	padding-bottom: 2px;
+	padding-left: 3px;
+	padding-top: 2px;
+	padding-right: 3px; 
+}
+
+/* This class affects areas where you can edit datasource content */
+.wgeditfield 
+{
+	color:black;
+	text-align:justify;
+	vertical-align:middle;
+	color: #443;
+	outline: none;
+	border: 1px solid #aaa; 
+}
+	
+
+
+
+.wgeditfield:hover,
+.wgeditfield:focus
+	{ 
+	border: 1px solid #ddd;
+
+	}
+
+/* This class encloses the entire editor in grid view (overview mode) */
+.wgmaingrid
+{
+	background-color:#999999;
+	border: 1px solid Gray;  
+
+}
+
+a.wgnewrecord, a.wgsearch, a.wgupdaterecord , a.wgclosewindow
+{
+    text-decoration:none;
+    color:white;
+}
+
+a.wgnewrecord:hover, a.wgsearch:hover, a.wgupdaterecord:hover , a.wgclosewindow:hover 
+{
+	    text-decoration:underline;
+    	color:white;
+}
+
+
+/* Color on clickable columns */
+a.wglinkfield
+{
+	color: Black;
+	text-decoration:none;
+}
+
+/* Color on the heading */
+a.wggridheader {
+	color:White;
+	text-decoration:none;
+}
+
+/* Class that affects the Pager (page navigation)  */
+a.wgpagerunselected:link, a.wgpagerunselected:visited,
+a.wgpagerall:link, a.wgpagerall:visited
+{
+	color: white;
+	text-align:left;
+	text-decoration:none;
+}
+
+/* This class affects the selected item in the Pager (page navigation)*/
+.wgpagerselected
+{
+	color: Black;
+	font-weight:bold;
+	text-align:left;
+}
+/* This class affects heading all WebGrid hyperlinks */
+a.wggridheader:hover,a.wglinkfield:hover,a.wgpagerunselected:hover,
+a.wgpagerall:hover{
+	text-decoration: underline;
+}
+
+/*
+
+The Cascading stylesheets found below is menu system being used for
+a WebGrid window.
+*/
+
+/* This class is used to render background color for WebGrid menu 
+	choice that are not in use. */
+.wginactivemenu 
+{
+color:White;
+padding: 0 7px 0 7px;
+
+}
+
+/* This class is used to render background color for WebGrid menu 
+	choice that are active. */
+.wgactivemenu 
+{
+color:White;
+padding: 0 7px 0 7px;
+}
+
+.wgmenuspacing
+{
+	width: 3px;
+}
+
+/* this class is placeholder for the images and WebGrid menu */
+.wgmenunavigation a
+{
+text-decoration:none;
+color:White;
+}
+
+
+.wgcontainer  
+{
+	margin:0 0; 
+}
+

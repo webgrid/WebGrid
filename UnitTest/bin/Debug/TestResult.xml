@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\WebGrid\Grid\UnitTest\bin\Debug\WebGridUnitTest.exe" total="1" errors="0" failures="0" not-run="0" ignored="0" skipped="0" invalid="0" date="2009-02-19" time="23:16:35">
+  <environment nunit-version="2.5.0.9015" clr-version="2.0.50727.3521" os-version="Microsoft Windows NT 6.1.7000.0" platform="Win32NT" cwd="C:\Program Files\Microsoft Visual Studio 8\Common7\IDE" machine-name="OLAVBOTTERLI-PC" user="Olav Botterli" user-domain="OlavBotterli-PC" />
+  <culture-info current-culture="nb-NO" current-uiculture="en-US" />
+  <test-suite name="C:\WebGrid\Grid\UnitTest\bin\Debug\WebGridUnitTest.exe" executed="True" success="True" time="1.156" asserts="0">
+    <results>
+      <test-suite name="WebGridUnitTest" executed="True" success="True" time="1.156" asserts="0">
+        <results>
+          <test-suite name="DataSource" executed="True" success="True" time="1.156" asserts="0">
+            <results>
+              <test-case name="WebGridUnitTest.DataSource.GetEmployeesAccess" executed="True" success="True" time="1.156" asserts="1" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

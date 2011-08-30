@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1124]C:\WebGrid\Grid\UnitTest\bin\Debug\WebGridUnitTest.exe</TopNode>
+  <SelectedNode>[0-1097]WebGridUnitTest.DataSource.GetEmployeesAccess</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1124]C:\WebGrid\Grid\UnitTest\bin\Debug\WebGridUnitTest.exe" Expanded="true">
+      <Nodes>
+        <Node UniqueName="[0-1125]WebGridUnitTest" Expanded="true">
+          <Nodes>
+            <Node UniqueName="[0-1111]WebGridUnitTest.ColumnFeature">
+              <Nodes>
+                <Node UniqueName="[0-1112]WebGridUnitTest.ColumnFeature.AllowEditInGrid" />
+                <Node UniqueName="[0-1113]WebGridUnitTest.ColumnFeature.AreUniqueValue" />
+                <Node UniqueName="[0-1114]WebGridUnitTest.ColumnFeature.GridDisplayTotalSummary" />
+                <Node UniqueName="[0-1115]WebGridUnitTest.ColumnFeature.GridSaveMethodEditMode" />
+                <Node UniqueName="[0-1116]WebGridUnitTest.ColumnFeature.GridSaveMethodGridMode" />
+                <Node UniqueName="[0-1117]WebGridUnitTest.ColumnFeature.GridSearchFoundSearch" />
+                <Node UniqueName="[0-1118]WebGridUnitTest.ColumnFeature.GridSearchNoSearchable" />
+                <Node UniqueName="[0-1119]WebGridUnitTest.ColumnFeature.MaximumSize" />
+                <Node UniqueName="[0-1120]WebGridUnitTest.ColumnFeature.MinimumSize" />
+                <Node UniqueName="[0-1121]WebGridUnitTest.ColumnFeature.NewRowInEdit" />
+                <Node UniqueName="[0-1122]WebGridUnitTest.ColumnFeature.NewRowInGrid" />
+                <Node UniqueName="[0-1123]WebGridUnitTest.ColumnFeature.PropertyInGridEdit" />
+              </Nodes>
+            </Node>
+            <Node UniqueName="[0-1058]WebGridUnitTest.ColumnPostBackClick">
+              <Nodes>
+                <Node UniqueName="[0-1059]WebGridUnitTest.ColumnPostBackClick.CheckboxColumn" />
+                <Node UniqueName="[0-1060]WebGridUnitTest.ColumnPostBackClick.DateColumn" />
+                <Node UniqueName="[0-1061]WebGridUnitTest.ColumnPostBackClick.DecimalColumn" />
+                <Node UniqueName="[0-1062]WebGridUnitTest.ColumnPostBackClick.ForeignKeyColumn" />
+                <Node UniqueName="[0-1063]WebGridUnitTest.ColumnPostBackClick.GridColumn" />
+                <Node UniqueName="[0-1064]WebGridUnitTest.ColumnPostBackClick.ManyToMany" />
+                <Node UniqueName="[0-1065]WebGridUnitTest.ColumnPostBackClick.NumberColumn" />
+                <Node UniqueName="[0-1066]WebGridUnitTest.ColumnPostBackClick.SystemColumn" />
+                <Node UniqueName="[0-1067]WebGridUnitTest.ColumnPostBackClick.TextColumn" />
+              </Nodes>
+            </Node>
+            <Node UniqueName="[0-1096]WebGridUnitTest.DataSource" Expanded="true">
+              <Nodes>
+                <Node UniqueName="[0-1097]WebGridUnitTest.DataSource.GetEmployeesAccess" />
+                <Node UniqueName="[0-1098]WebGridUnitTest.DataSource.GetEmployeesAccessNoDataSource" />
+                <Node UniqueName="[0-1099]WebGridUnitTest.DataSource.GetEmployeesAccessNoVisible" />
+                <Node UniqueName="[0-1100]WebGridUnitTest.DataSource.GetTestAccessOleDb" />
+                <Node UniqueName="[0-1101]WebGridUnitTest.DataSource.GetTestAccessOleDbCacheIsFalse" />
+                <Node UniqueName="[0-1102]WebGridUnitTest.DataSource.GetTestAccessOleDbCacheIsTrue" />
+                <Node UniqueName="[0-1103]WebGridUnitTest.DataSource.GetTestSetDataSourceOleDb" />
+                <Node UniqueName="[0-1104]WebGridUnitTest.DataSource.GetTestSetDataSourceXml" />
+                <Node UniqueName="[0-1105]WebGridUnitTest.DataSource.GetTestSqlConnection" />
+                <Node UniqueName="[0-1107]WebGridUnitTest.DataSource.TestOleDataReader" />
+                <Node UniqueName="[0-1108]WebGridUnitTest.DataSource.TestOleDbAccessConnection" />
+                <Node UniqueName="[0-1109]WebGridUnitTest.DataSource.TestOleDbConnection" />
+                <Node UniqueName="[0-1110]WebGridUnitTest.DataSource.TestSqlConnection" />
+                <Node UniqueName="[0-1106]WebGridUnitTest.DataSource.ValidateDataSourceProperty" />
+              </Nodes>
+            </Node>
+            <Node UniqueName="[0-1085]WebGridUnitTest.DataSourceControl">
+              <Nodes>
+                <Node UniqueName="[0-1086]WebGridUnitTest.DataSourceControl.CreateAndDeleteRecord" />
+                <Node UniqueName="[0-1087]WebGridUnitTest.DataSourceControl.CreateRecordSelect" />
+                <Node UniqueName="[0-1088]WebGridUnitTest.DataSourceControl.NewRecordWithDataSourceControl" />
+                <Node UniqueName="[0-1089]WebGridUnitTest.DataSourceControl.SelectFromAccessDataSourceControl" />
+                <Node UniqueName="[0-1090]WebGridUnitTest.DataSourceControl.SelectFromSqlDataSourceControl" />
+                <Node UniqueName="[0-1091]WebGridUnitTest.DataSourceControl.SelectFromXmlDataSourceControl" />
+                <Node UniqueName="[0-1092]WebGridUnitTest.DataSourceControl.UpdateRecord" />
+                <Node UniqueName="[0-1093]WebGridUnitTest.DataSourceControl.UpdateRecordStayEdit" />
+              </Nodes>
+            </Node>
+            <Node UniqueName="[0-1081]WebGridUnitTest.Exception">
+              <Nodes>
+                <Node UniqueName="[0-1082]WebGridUnitTest.Exception.GetEmployeesAccessInvalidMasterGrid" />
+                <Node UniqueName="[0-1083]WebGridUnitTest.Exception.GetEmployeesErrorWhere" />
+                <Node UniqueName="[0-1084]WebGridUnitTest.Exception.GetUnknownDataSource" />
+              </Nodes>
+            </Node>
+            <Node UniqueName="[0-1000]WebGridUnitTest.GridEvents">
+              <Nodes>
+                <Node UniqueName="[0-1001]WebGridUnitTest.GridEvents.CreateAndDeleteRecordBeforeAfterDeleteSucccess" />
+                <Node UniqueName="[0-1002]WebGridUnitTest.GridEvents.CreateAndDeleteRecordBeforeDeleteDisallowed" />
+                <Node UniqueName="[0-1003]WebGridUnitTest.GridEvents.CreateRecordBeforeAfterEventSuccess" />
+                <Node UniqueName="[0-1004]WebGridUnitTest.GridEvents.CreateRecordBeforeDisallowedEvent" />
+                <Node UniqueName="[0-1005]WebGridUnitTest.GridEvents.GetEmployeesAccessMasterGridEditActiveSlaveGridThreeSlaveGrids" />
+                <Node UniqueName="[0-1006]WebGridUnitTest.GridEvents.GridCancelEventClickDisallow" />
+                <Node UniqueName="[0-1007]WebGridUnitTest.GridEvents.GridEditRowEvents" />
+                <Node UniqueName="[0-1008]WebGridUnitTest.GridEvents.GridExportClickEvents" />
+                <Node UniqueName="[0-1009]WebGridUnitTest.GridEvents.GridHeaderClickEvent" />
+                <Node UniqueName="[0-1010]WebGridUnitTest.GridEvents.GridLifeCycleEvents" />
+                <Node UniqueName="[0-1011]WebGridUnitTest.GridEvents.GridNewRecordEventClickDisallow" />
+                <Node UniqueName="[0-1012]WebGridUnitTest.GridEvents.GridPagerClickEventDisallow" />
+                <Node UniqueName="[0-1013]WebGridUnitTest.GridEvents.GridPostBackEvents" />
+                <Node UniqueName="[0-1014]WebGridUnitTest.GridEvents.GridRowClickDisallowed" />
+                <Node UniqueName="[0-1015]WebGridUnitTest.GridEvents.GridRowClickEvents" />
+                <Node UniqueName="[0-1016]WebGridUnitTest.GridEvents.GridRowClickSuccess" />
+                <Node UniqueName="[0-1017]WebGridUnitTest.GridEvents.GridRowEventSuccess" />
+                <Node UniqueName="[0-1018]WebGridUnitTest.GridEvents.GridSearchEvents" />
+                <Node UniqueName="[0-1019]WebGridUnitTest.GridEvents.GridUpdateGridRowsClickEvent" />
+                <Node UniqueName="[0-1020]WebGridUnitTest.GridEvents.GridUpdateRecordEvent" />
+              </Nodes>
+            </Node>
+            <Node UniqueName="[0-1094]WebGridUnitTest.GridPart">
+              <Nodes>
+                <Node UniqueName="[0-1095]WebGridUnitTest.GridPart.GetTestAccessOleDb" />
+              </Nodes>
+            </Node>
+            <Node UniqueName="[0-1068]WebGridUnitTest.PostBackClick">
+              <Nodes>
+                <Node UniqueName="[0-1069]WebGridUnitTest.PostBackClick.CreateAndDeleteRecord" />
+                <Node UniqueName="[0-1070]WebGridUnitTest.PostBackClick.CreateAndDeleteRecordSelect" />
+                <Node UniqueName="[0-1071]WebGridUnitTest.PostBackClick.CreateRecord" />
+                <Node UniqueName="[0-1072]WebGridUnitTest.PostBackClick.CreateRecordFieldRequired" />
+                <Node UniqueName="[0-1073]WebGridUnitTest.PostBackClick.CreateRecordSelect" />
+                <Node UniqueName="[0-1074]WebGridUnitTest.PostBackClick.CreateRecordSelectFieldRequired" />
+                <Node UniqueName="[0-1075]WebGridUnitTest.PostBackClick.NewRecord" />
+                <Node UniqueName="[0-1076]WebGridUnitTest.PostBackClick.NewRecordAndCancelRecord" />
+                <Node UniqueName="[0-1077]WebGridUnitTest.PostBackClick.NewRecordMaximumRecordsLimit" />
+                <Node UniqueName="[0-1078]WebGridUnitTest.PostBackClick.OrderBy" />
+                <Node UniqueName="[0-1079]WebGridUnitTest.PostBackClick.UpdateRecord" />
+                <Node UniqueName="[0-1080]WebGridUnitTest.PostBackClick.UpdateRecordSelect" />
+              </Nodes>
+            </Node>
+            <Node UniqueName="[0-1034]WebGridUnitTest.Properties">
+              <Nodes>
+                <Node UniqueName="[0-1035]WebGridUnitTest.Properties.GetEmployeesAccessAllowFalse" />
+                <Node UniqueName="[0-1036]WebGridUnitTest.Properties.GetEmployeesAccessPager" />
+                <Node UniqueName="[0-1037]WebGridUnitTest.Properties.GetEmployeesAccessSystemMessage" />
+                <Node UniqueName="[0-1038]WebGridUnitTest.Properties.GetEmployeesAccessSystemMessageCritical" />
+                <Node UniqueName="[0-1039]WebGridUnitTest.Properties.GetTestAccessOleDbAllowEditInGridTFalse" />
+                <Node UniqueName="[0-1040]WebGridUnitTest.Properties.GetTestAccessOleDbAllowEditInGridTrue" />
+                <Node UniqueName="[0-1041]WebGridUnitTest.Properties.GetTestAccessOleDbDisplayFalse" />
+                <Node UniqueName="[0-1042]WebGridUnitTest.Properties.GetTestAccessOleDbEditMode" />
+                <Node UniqueName="[0-1043]WebGridUnitTest.Properties.GetTestAccessOleDbForeignkeyEditInEditMode" />
+                <Node UniqueName="[0-1044]WebGridUnitTest.Properties.GetTestAccessOleDbForeignkeyEditInGridMode" />
+                <Node UniqueName="[0-1045]WebGridUnitTest.Properties.GetTestAccessOleDbForeignkeyEditInGridModeViewDataSource" />
+                <Node UniqueName="[0-1046]WebGridUnitTest.Properties.GetTestAccessOleDbForeignkeyTreeEditInEditMode" />
+                <Node UniqueName="[0-1047]WebGridUnitTest.Properties.GetTestAccessOleDbForeignkeyWhereEditInEditMode" />
+                <Node UniqueName="[0-1048]WebGridUnitTest.Properties.GetTestAccessOleDbLoadXmlWebGridMessages" />
+                <Node UniqueName="[0-1049]WebGridUnitTest.Properties.GetTestAccessOleDbManyToManyWhereEditInEditMode" />
+                <Node UniqueName="[0-1050]WebGridUnitTest.Properties.GetTestAccessOleDbRecordCount" />
+                <Node UniqueName="[0-1051]WebGridUnitTest.Properties.GetTestAccessOleDbSearch" />
+                <Node UniqueName="[0-1052]WebGridUnitTest.Properties.GetTestAccessOleDbSortExpression" />
+                <Node UniqueName="[0-1053]WebGridUnitTest.Properties.GetTestAccessOleDbWhere" />
+                <Node UniqueName="[0-1054]WebGridUnitTest.Properties.GetTestAccessOleDbWhereAndSortExpression" />
+                <Node UniqueName="[0-1055]WebGridUnitTest.Properties.GetTestAccessOleDbWhereAndSortExpressionAndPager" />
+                <Node UniqueName="[0-1056]WebGridUnitTest.Properties.GridSearchOption" />
+                <Node UniqueName="[0-1057]WebGridUnitTest.Properties.GridSelectableRows" />
+              </Nodes>
+            </Node>
+            <Node UniqueName="[0-1025]WebGridUnitTest.Relations">
+              <Nodes>
+                <Node UniqueName="[0-1026]WebGridUnitTest.Relations.GetEmployeesAccessMasterGrid" />
+                <Node UniqueName="[0-1027]WebGridUnitTest.Relations.GetEmployeesAccessMasterGridEdit" />
+                <Node UniqueName="[0-1028]WebGridUnitTest.Relations.GetEmployeesAccessMasterGridEditActiveSlaveGrid" />
+                <Node UniqueName="[0-1029]WebGridUnitTest.Relations.GetEmployeesAccessMasterGridEditActiveSlaveGridThenInActiveSlaveGrid" />
+                <Node UniqueName="[0-1030]WebGridUnitTest.Relations.GetEmployeesAccessMasterGridEditActiveSlaveGridThreeSlaveGrids" />
+                <Node UniqueName="[0-1031]WebGridUnitTest.Relations.GetEmployeesAccessMasterGridEditDefaultSlaveGridThreeSlaveGrids" />
+                <Node UniqueName="[0-1032]WebGridUnitTest.Relations.SetDataSourceForeignKey" />
+                <Node UniqueName="[0-1033]WebGridUnitTest.Relations.SetDataSourceForeignKeyStringArray" />
+              </Nodes>
+            </Node>
+            <Node UniqueName="[0-1021]WebGridUnitTest.Rendering">
+              <Nodes>
+                <Node UniqueName="[0-1022]WebGridUnitTest.Rendering.GetEmployeesAccessLayOutTest" />
+                <Node UniqueName="[0-1023]WebGridUnitTest.Rendering.RenderEmptyGrid" />
+                <Node UniqueName="[0-1024]WebGridUnitTest.Rendering.RenderGridWithRows" />
+              </Nodes>
+            </Node>
+          </Nodes>
+        </Node>
+      </Nodes>
+    </Node>
+  </Nodes>
+</VisualState>

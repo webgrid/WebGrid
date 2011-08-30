@@ -1,0 +1,940 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5006D876-7EE4-4CE7-A494-D02788E36A75}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Provider.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>WebGrid</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE32Nav30</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WebGrid</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DocumentationFile>webgrid.Xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>Migrated rules for WebGrid2005.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\WebGrid.XML</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Anthem, Version=1.5.2.0, Culture=neutral, PublicKeyToken=19ffc9dff2ec4ae2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\anthem\Anthem-2005\bin\Release\Anthem.dll</HintPath>
+    </Reference>
+    <Reference Include="EnvDTE">
+      <Name>envdte</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\GroupColumnCollection.cs" />
+    <Compile Include="Collections\MenuItemCollection.cs" />
+    <Compile Include="Collections\RowCellCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\ToolbarCollection.cs" />
+    <Compile Include="Columns\Image.cs" />
+    <Compile Include="Columns\ToolTipColumn.cs" />
+    <Compile Include="ClientNotification.cs" />
+    <Compile Include="Data\ContextMenu\AbstractMenuItem.cs" />
+    <Compile Include="Data\ContextMenu\CustomMenuItem.cs" />
+    <Compile Include="Data\ContextMenu\SystemMenuItem.cs" />
+    <Compile Include="Data\Grouping\GroupingColumn.cs" />
+    <Compile Include="Data\Toolbars\AbstractToolbar.cs">
+    </Compile>
+    <Compile Include="Data\Toolbars\Toolbars.cs" />
+    <Compile Include="Enums\ImageDisplayType.cs" />
+    <Compile Include="Enums\RowTypes.cs" />
+    <Compile Include="InputMask.cs" />
+    <Compile Include="PopupExtender.cs" />
+    <Compile Include="Data\RowCell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\ContextMenuType.cs" />
+    <Compile Include="Enums\ToolTip.cs" />
+    <Compile Include="Enums\ToolbarTypes.cs" />
+    <Compile Include="GridWebMethods.cs" />
+    <Compile Include="ScriptSettings.cs" />
+    <Compile Include="Util\Parser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebGridClientObject.cs" />
+    <Compile Include="GridClientEvents.cs" />
+    <Compile Include="Collections\ColumnCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\GridCollection.cs" />
+    <Compile Include="Collections\ManyToManyCollection.cs" />
+    <Compile Include="Collections\SentenceCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Columns\ColumnTemplate.cs" />
+    <Compile Include="Config\Xml.cs" />
+    <Compile Include="Columns\GridColumn.cs" />
+    <Compile Include="Data\Database\EnumDataSource.cs" />
+    <Compile Include="Data\SystemMessages\AbstractSentence.cs" />
+    <Compile Include="Data\SystemMessages\SentenceItem.cs">
+    </Compile>
+    <Compile Include="Design\GridException.cs" />
+    <Compile Include="Design\GridSettings.cs" />
+    <Compile Include="Enums\DataSource.cs" />
+    <Compile Include="Enums\NavigateStyle.cs" />
+    <Compile Include="Enums\SystemMessage.cs" />
+    <Compile Include="Enums\Template.cs" />
+    <Compile Include="GridAnthem.cs" />
+    <Compile Include="Collections\ImageSizeCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\RowCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\SystemMessageCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\TableCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Config\Config.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\DesignerActionList.cs" />
+    <Compile Include="GridFormMail.cs" />
+    <Compile Include="GridPager.cs" />
+    <Compile Include="GridServerEvents.cs" />
+    <Compile Include="GridMethods.cs" />
+    <Compile Include="GridSetup.cs" />
+    <Compile Include="GridSystemMessages.cs" />
+    <Compile Include="GridPart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Columns\AbstractColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Columns\Checkbox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Columns\Chart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Columns\DataBaseColumnInformation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Columns\DateTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Columns\File.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Columns\Decimal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Columns\Foreignkey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Columns\ImageSize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Columns\Number.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Columns\ManyToMany.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Columns\SystemColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Columns\UnknownColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Columns\Text.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Database\OleDB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Database\Data Interface.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Database\SqlConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Row.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Table.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\DesignRender.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\DesignTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\Help.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GridProperties.cs" />
+    <Compile Include="Pager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\RenderingMethods.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\ColumnHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\Rendering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\Writer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Grid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\CalendarStyles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\ChartTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\ColumnTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\ErrorStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\FileNameOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\FileTemporaryModes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\ForeignkeyTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\HorisontalPositions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\Language.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\ManyToManyTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\Mode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\PagerTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\Positions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\ResizeModes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\GridStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\SystemColumns.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\GridPart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\TriStateBool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\VerticalPositions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\Visibility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GridServerEventHandlers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Templates.cs" />
+    <Compile Include="Data\SystemMessages\Sentences.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sort\SortList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\SystemMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Asynchronous.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Buttons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Chart\Chart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Chart\ChartAlignTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Chart\ChartBackground.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Chart\ChartHeadline.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Chart\ChartValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\DBImage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Excel\Excel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\HtmlEditor\BasePathException.cs" />
+    <Compile Include="Util\HtmlEditor\ControlHandler.cs" />
+    <Compile Include="Util\HtmlEditor\ControlManager.cs" />
+    <Compile Include="Util\HtmlEditor\HtmlEditor.cs" />
+    <Compile Include="Util\HtmlEditor\HtmlEditorDesigner.cs" />
+    <Compile Include="Util\HtmlParser\attribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\HtmlParser\attributeList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\HtmlParser\Parse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\HtmlParser\ParseHtml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Import\Excel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\InsertUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Mail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Query\MultiSelect\MultiSelect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Json\Converters\AspNetAjaxDateTimeConverter.cs" />
+    <Compile Include="Util\Json\Converters\HtmlColorConverter.cs" />
+    <Compile Include="Util\Json\Converters\XmlNodeConverter.cs" />
+    <Compile Include="Util\Json\Identifier.cs" />
+    <Compile Include="Util\Json\JavaScriptArray.cs" />
+    <Compile Include="Util\Json\JavaScriptConstructor.cs" />
+    <Compile Include="Util\Json\JavaScriptConvert.cs" />
+    <Compile Include="Util\Json\JavaScriptObject.cs" />
+    <Compile Include="Util\Json\JavaScriptParameters.cs" />
+    <Compile Include="Util\Json\JsonConverter.cs" />
+    <Compile Include="Util\Json\JsonConverterCollection.cs" />
+    <Compile Include="Util\Json\JsonIgnoreAttribute.cs" />
+    <Compile Include="Util\Json\JsonPropertyAttribute.cs" />
+    <Compile Include="Util\Json\JsonReader.cs" />
+    <Compile Include="Util\Json\JsonReaderException.cs" />
+    <Compile Include="Util\Json\JsonSerializationException.cs" />
+    <Compile Include="Util\Json\JsonSerializer.cs" />
+    <Compile Include="Util\Json\JsonToken.cs" />
+    <Compile Include="Util\Json\JsonWriter.cs" />
+    <Compile Include="Util\Json\JsonWriterException.cs" />
+    <Compile Include="Util\Json\MemberMapping.cs" />
+    <Compile Include="Util\Json\MemberMappingCollection.cs" />
+    <Compile Include="Util\Json\StringBuffer.cs" />
+    <Compile Include="Util\Json\Utilities\CollectionUtils.cs" />
+    <Compile Include="Util\Json\Utilities\JavaScriptUtils.cs" />
+    <Compile Include="Util\Json\Utilities\MathUtils.cs" />
+    <Compile Include="Util\Json\Utilities\MiscellaneousUtils.cs" />
+    <Compile Include="Util\Json\Utilities\ReflectionUtils.cs" />
+    <Compile Include="Util\Json\Utilities\StringUtils.cs" />
+    <Compile Include="Util\Json\Utilities\ValidationUtils.cs" />
+    <Compile Include="Util\Query\OleDBQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Query\ConnectionString.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Query\ConnectionType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Query\SqlConnectionQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Query\MySqlQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Query\Query.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Security.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Set.cs" />
+    <Compile Include="Util\SMS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\StringFunctions.cs" />
+    <Compile Include="Util\Tooltip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Translate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Util\Validate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="Provider.ico" />
+    <Content Include="Anthem_Changes.txt" />
+    <EmbeddedResource Include="Resources\jquery-bookmark.js" />
+    <EmbeddedResource Include="Resources\jquery-ui.selectmenu.js" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonal-maze_20_6e4f1c_10x10.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonal-maze_40_000000_10x10.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-small_0_aaaaaa_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-small_25_c5ddfc_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-small_40_db4865_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-small_50_262626_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-small_50_93c3cd_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-small_50_ff3853_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-small_75_ccd232_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-thick_15_0b3e6f_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-thick_15_444444_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-thick_20_e69700_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-thick_22_1484e6_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-thick_26_2293f7_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-thick_75_f3d8d8_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-thick_8_333333_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diagonals-thick_95_ffdc2e_40x40.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diamond_10_4f4221_10x8.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diamond_20_372806_10x8.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diamond_25_675423_10x8.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diamond_25_d5ac5d_10x8.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diamond_8_261803_10x8.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_diamond_8_443113_10x8.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_dots-medium_30_0b58a2_4x4.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_dots-medium_80_ffff38_4x4.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_dots-small_20_333333_2x2.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_dots-small_30_a32d00_2x2.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_dots-small_35_35414f_2x2.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_dots-small_40_00498f_2x2.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_dots-small_65_a6a6a6_2x2.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_fine-grain_10_eceadf_60x60.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_fine-grain_10_f8f7f6_60x60.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_fine-grain_15_eceadf_60x60.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_fine-grain_15_f7f3de_60x60.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_fine-grain_15_ffffff_60x60.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_fine-grain_65_654b24_60x60.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_fine-grain_68_b83400_60x60.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_0_303030_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_0_333333_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_0_4c4c4c_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_0_e69700_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_0_e6b900_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_10_000000_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_40_292929_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_55_994d53_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_55_999999_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_55_c0402a_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_55_eeeeee_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_55_fafafa_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_55_ffffff_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_65_ffffff_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_75_aaaaaa_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_75_ba9217_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_75_ddd4b0_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_100_f5f0e5_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_100_f8f8f8_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_15_5f391b_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_20_555555_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_25_cb842e_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_35_dddddd_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_40_0078a3_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_40_0a0a0a_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_40_111111_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_45_0078ae_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_55_1c1c1c_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_55_f1fbe5_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_55_f8da4e_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_55_fbf5d0_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_55_fbf8ee_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_55_fcf0ba_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_60_000000_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_60_eeeeee_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_70_ede4d4_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_75_79c9ec_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_100_ece8da_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_16_121212_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_20_111111_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_20_1c160d_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_25_453326_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_30_3d3644_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_30_44372c_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_45_817865_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_60_fece2f_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_75_2191c0_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_85_9fda58_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_95_f6ecd5_500x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_100_eeeeee_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_100_f4f0ec_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_100_f5f3e5_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_100_f6f6f6_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_100_f9f9f9_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_100_fafaf4_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_15_459e00_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_15_888888_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_20_0972a5_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_30_285c00_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_40_aaaaaa_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_55_555555_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_65_fee4bd_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_75_f5f5b5_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-hard_95_cccccc_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_100_dcd9de_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_100_eae6ea_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_100_f6f6f6_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_100_f9f9f9_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_100_feeebd_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_15_cc0000_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_20_201913_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_20_619226_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_25_0073ea_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_25_30273a_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_25_67b021_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_33_003147_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_33_3a8104_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_35_222222_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_35_adadad_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_44_444444_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_45_5f5964_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_50_4eb305_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_50_aaaaaa_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_50_dddddd_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_60_4ca20b_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_60_dddddd_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_95_ffedad_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_inset-hard_100_eeeeee_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_inset-hard_45_cd0a0a_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_inset-hard_55_ffeb80_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_inset-hard_75_999999_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_inset-soft_100_f4f0ec_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_inset-soft_10_201913_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_inset-soft_10_285c00_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_inset-soft_15_121212_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_inset-soft_15_2b2922_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_inset-soft_25_000000_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_inset-soft_30_ffffff_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_inset-soft_50_c9c9c9_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_loop_25_000000_21x21.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_white-lines_85_f7f7ba_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_000000_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_004276_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_00498f_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_0073ea_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_0078ae_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_056b93_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_070603_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_0a82eb_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_0b54d5_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_1f1f1f_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_217bc0_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_228ef1_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_2694e8_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_3383bb_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_3572ac_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_3d3d3d_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_3d80b3_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_469bdd_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_4b8e0b_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_4ca300_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_4eb305_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_5fa5e3_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_666666_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_6da8d5_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_70b2e1_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_72a7cf_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_72b42d_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_734d99_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_808080_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_847e71_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_88a206_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_8c291d_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_8d78a5_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_8DC262_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_98d2fb_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_999999_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_9bcc60_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_9ccdfc_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_9fda58_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_a83300_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_a8a3ae_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_aaaaaa_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_add978_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_b83400_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_b8ec79_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_bbbbbb_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_bd7b00_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_c02669_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_c47a23_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_c98000_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_cb672b_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_cc0000_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_cccccc_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_d19405_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_d8e7f3_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_e0fdff_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_e1e463_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_e3ddc9_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_e8e2b5_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_e9cd86_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_eb990f_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_ebccce_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_ed9f26_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_ededed_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_eeeeee_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_ef8c08_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_efec9f_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_f08000_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_f1fd86_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_f29a00_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_f2ec64_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_f35f07_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_f5e175_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_f7a50d_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_f9bd01_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_f9f2bd_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_fadc7a_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_fbc856_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_fbdb93_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_fcd113_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_fcdd4a_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_ff0084_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_ff7519_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_ffcf29_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_ffd27a_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_ffe180_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_ffeb33_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_ffffff_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_gloss-wave_55_000000_500x100.png" />
+    <EmbeddedResource Include="Resources\jquery-ui-black_tie.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-blitzer.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-cupertino.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-dark_hive.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-darkness.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-dot_luv.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-eggplant.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-excite_bike.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-flick.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-hot_sneaks.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-humanity.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-le_frog.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-lightness.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-mint_choc.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-overcast.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-pepper_grinder.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-redmond.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-south_street.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-start.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-sunny.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-swanky_purse.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-trontastic.css" />
+    <EmbeddedResource Include="Resources\jquery-ui-vader.css" />
+    <EmbeddedResource Include="Resources\jquery.jgrowl_minimized.js" />
+    <EmbeddedResource Include="Resources\jquery.meio.mask.min.js" />
+    <EmbeddedResource Include="Resources\images\controls.png" />
+    <EmbeddedResource Include="Resources\images\loading.gif" />
+    <EmbeddedResource Include="Resources\jquery.colorbox-min.js" />
+    <EmbeddedResource Include="Resources\images\transparent.gif" />
+    <EmbeddedResource Include="Resources\images\calendar.gif" />
+    <EmbeddedResource Include="Resources\images\exit.gif" />
+    <EmbeddedResource Include="Resources\images\export.gif" />
+    <EmbeddedResource Include="Resources\images\help.gif" />
+    <EmbeddedResource Include="Resources\images\print.gif" />
+    <EmbeddedResource Include="Resources\images\refresh.gif" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_75_dadada_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <EmbeddedResource Include="Resources\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_222222_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_2e83ff_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_454545_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_888888_256x240.png" />
+    <EmbeddedResource Include="Resources\images\ui-icons_cd0a0a_256x240.png" />
+    <EmbeddedResource Include="Resources\jquery-ui-1.7.2.custom.min.js" />
+    <EmbeddedResource Include="Resources\jquery-ui-smoothness.css" />
+    <EmbeddedResource Include="Resources\jquery.qtip-1.0.0-rc3.min.js" />
+    <EmbeddedResource Include="Resources\jquery.contextMenu.js" />
+    <EmbeddedResource Include="Resources\jquery-1.3.2.min.js" />
+    <EmbeddedResource Include="Resources\WebGridMessages.xml" />
+    <EmbeddedResource Include="Resources\noimage.gif" />
+    <EmbeddedResource Include="Resources\WebGrid_JQueryUI.css" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\modeoff.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\modeon.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\browser.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\cleanup.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\commands\ccpcommands.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\commands\Command.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\commands\commandcollection.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\commands\dialogcommand.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\commands\modecommand.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\config.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\constant.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\domutils.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\domutilsmozilla.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\domutilsmsie.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\engine.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\enginemozilla.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\enginemsie.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\entities.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\events.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\loader.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\ui\button.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\ui\combobox.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\ui\dialog.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\ui\fontname.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\ui\fontsize.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\ui\separator.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\ui\switchbutton.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\ui\toolbar.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\ui\toolbaritemcollection.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\ui\toolbars.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\XHTML.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\XHTMLmozilla.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\scripts\XHTMLmsie.js" />
+    <EmbeddedResource Include="Resources\WebGrid_ColumnChanged.js" />
+    <EmbeddedResource Include="Resources\WebGrid_Misc.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\dialogs\colorpicker.htm" />
+    <EmbeddedResource Include="Util\HtmlEditor\dialogs\colorpicker.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\dialogs\image.htm" />
+    <EmbeddedResource Include="Util\HtmlEditor\dialogs\images\spacer.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\dialogs\link.htm" />
+    <EmbeddedResource Include="Util\HtmlEditor\dialogs\link.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\dialogs\paste.htm" />
+    <EmbeddedResource Include="Util\HtmlEditor\dialogs\paste.js" />
+    <EmbeddedResource Include="Util\HtmlEditor\dialogs\styles.css" />
+    <EmbeddedResource Include="Util\HtmlEditor\dialogs\table.htm" />
+    <EmbeddedResource Include="Util\HtmlEditor\editor.htm" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\backcolor.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\bold.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\browse.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\copy.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\cut.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\forecolor.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\grip.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\image.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\indent.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\insertorderedlist.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\insertunorderedlist.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\italic.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\justifycenter.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\justifyfull.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\justifyleft.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\justifyright.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\link.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\mode.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\outdent.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\paste.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\pastefromword.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\pasteplaintext.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\separator.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\spacer.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\strikethrough.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\table.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\underline.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\images\toolbar\unlink.gif" />
+    <EmbeddedResource Include="Util\HtmlEditor\styles\editor.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Util\HtmlEditor\addons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

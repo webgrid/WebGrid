@@ -1,0 +1,25 @@
+body
+{
+	margin: 0px;
+	padding: 10px;
+	background-color: #ece9d8;
+}
+body, td, input, select /*, textarea*/
+{
+	font-size: 11px;
+	font-family: 'Microsoft Sans Serif' , Arial, Helvetica, Verdana;
+}
+textarea
+{
+	background-color: white;
+}
+.button
+{
+	border: black 1px solid;
+	background-color: #F3F3EE;
+}
+.header
+{
+	 font-weight: bold;
+	 font-size: 14pt;
+}

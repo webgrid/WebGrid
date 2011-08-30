@@ -1,0 +1,310 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head id="ctl00_Head1">
+        <style type="text/css">
+            a
+            {
+                text-decoration: none;
+                color: #003399;
+            }
+            a:hover
+            {
+                text-decoration: underline;
+                color: #F60;
+            }
+            .PropertiesEditor TD
+            {
+                border-right: gray 1px solid;
+                border-top: gray 1px solid;
+                border-left: gray 1px solid;
+                border-bottom: gray 1px solid;
+            }
+            .PropertiesTable
+            {
+                border-right: gray 1px solid;
+                border-top: gray 1px solid;
+                border-left: gray 1px solid;
+                border-bottom: gray 1px solid;
+            }
+            .wgalternative
+            {
+                color: white;
+                background-color: gray;
+            }
+            .wgalternative2
+            {
+                color: white;
+                background-color: GrayText;
+            }
+        </style>
+        <title>WebGrid - plug and play datagrid </title>
+        <link href="/WebGrid starter kit for Csharp1/WebResource.axd?d=b_qQGKD1DEPCUrfYMHcPOsfTpkQMkAsysz7M-iP5CrSk8DKPcbw3vF0W0FQAd39C0&amp;t=633843155734418752"
+            rel="stylesheet" type="text/css" />
+        <link href="/WebGrid starter kit for Csharp1/WebResource.axd?d=b_qQGKD1DEPCUrfYMHcPOsfTpkQMkAsysz7M-iP5CrS8_HRi6T2gOmvoA4ULwX-FMGjSdz5jjj8Km2O5pDF_8A2&amp;t=633843155734418752"
+            rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <form name="aspnetForm" method="post" action="sample4.aspx" id="aspnetForm" enctype="multipart/form-data">
+        <table class="wgsystemmessagebox" width="750px">
+            <tr>
+                <td class="wgsystemmessagetitle">
+                    System message
+                </td>
+            </tr>
+            <tr>
+                <td class="wgedit wgrow">
+                    <a class="wglinkfield" href="http://www.webgrid.com/Examples/RequestLicense.aspx"><b>
+                        Click here to receive your FREE WebGrid DataGrid license now.</b></a><br />
+                </td>
+            </tr>
+        </table>
+        <div style="width: 750px" class="wgshadowcontainer" id="wgContainer_test">
+            <table onkeydown="return SubmitGridOnEnter(event,'test_wgupdaterecord');" style="display: inline-block;"
+                width="750px" cellpadding="0" cellspacing="0" id="wgContent_test">
+                <tr>
+                    <td>
+                        <table width="750px" class="wgedit wgmainedit" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td valign="top" class="wgtitleedit wgtitle" colspan="4">
+                                    <table class="wgheader">
+                                        <tr class="wgrow">
+                                            <td class="wgrow wgtitle">
+                                                Employees
+                                            </td>
+                                            <td class="wgrow wgtitle" style="text-align: right">
+                                                &nbsp;<iframe style="visibility: hidden" name="test_frame" id="test_frame" width="0"
+                                                    height="0"></iframe>
+                                                <a onmouseover="return window.status='Click to activate.';return true;" onmouseout="window.status='';"
+                                                    href="javascript:void(WGprint('test'))">
+                                                    <img style="border: 0px" alt="Print" src="./images/print.gif" /></a>&nbsp;<a class="wglinkfield"
+                                                        href="#" onmouseover="return window.status='Click to activate.';return true;"
+                                                        onmouseout="window.status='';" onclick="WebGridCreateWindow('?showhelp=true&amp;gridid=test',475,400,100,100, true,null);return false;"><img
+                                                            style="border: 0px" src="./images/help.gif" alt="Help" /></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 120px" id="testEmployeeIdr0">
+                                    EmployeeID
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    Leverling
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 96px" id="testLastNamer0">
+                                    LastName
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                                        maxlength="20" value="Leverling" id="test_3_LastName" name="test_3_LastName" />
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 108px" id="testFirstNamer0">
+                                    FirstName
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                                        maxlength="10" value="Janet" id="test_3_FirstName" name="test_3_FirstName" />
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 60px" id="testTitler0">
+                                    Title
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                                        maxlength="30" value="Sales Representative" id="test_3_Title" name="test_3_Title" />
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 140px" id="testTitleOfCourtesyr0">
+                                    TitleOfCourtesy
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                                        maxlength="25" value="Ms." id="test_3_TitleOfCourtesy" name="test_3_TitleOfCourtesy" />
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 108px" id="testBirthDater0">
+                                    BirthDate
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    <input type="text" onblur="isChanged(this,'LightSteelBlue');" class="wgeditfield"
+                                        style="text-align: Right;" value="08/30/1963" id="test_3_BirthDate" name="test_3_BirthDate" /><span
+                                            style="vertical-align: middle" class="wgnowrap">
+                                            <img style="vertical-align: middle; height: 100%; border: 0px" alt="Click the image to open a datepicker."
+                                                src="./images/calendar.gif" id="test_3_BirthDate_trigger" /></span><script type="text/javascript">
+	 Calendar.setup(
+ {
+ inputField     :    "test_3_BirthDate",   // id of the input field
+ ifFormat       :    "MM/dd/yyyy",  // format of the input field
+ showsTime      :    "false",   // will display a time selector
+ button         :    "test_3_BirthDate_trigger",   // trigger for the calendar (button ID)
+ singleClick          :    true,       // double-click mode
+ electric             :    false      // only update on close
+ })
+
+                                                </script>
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 96px" id="testHireDater0">
+                                    HireDate
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    <input type="text" onblur="isChanged(this,'LightSteelBlue');" class="wgeditfield"
+                                        style="text-align: Right;" value="04/01/1992" id="test_3_HireDate" name="test_3_HireDate" /><span
+                                            style="vertical-align: middle" class="wgnowrap">
+                                            <img style="vertical-align: middle; height: 100%; border: 0px" alt="Click the image to open a datepicker."
+                                                src="./images/calendar.gif" id="test_3_HireDate_trigger" /></span><script type="text/javascript">
+	 Calendar.setup(
+ {
+ inputField     :    "test_3_HireDate",   // id of the input field
+ ifFormat       :    "MM/dd/yyyy",  // format of the input field
+ showsTime      :    "false",   // will display a time selector
+ button         :    "test_3_HireDate_trigger",   // trigger for the calendar (button ID)
+ singleClick          :    true,       // double-click mode
+ electric             :    false      // only update on close
+ })
+
+                                                </script>
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 84px" id="testAddressr0">
+                                    Address
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                                        maxlength="60" value="722 Moss Bay Blvd." id="test_3_Address" name="test_3_Address" />
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 48px" id="testCityr0">
+                                    City
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                                        maxlength="15" value="Kirkland" id="test_3_City" name="test_3_City" />
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 72px" id="testRegionr0">
+                                    Region
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                                        maxlength="15" value="WA" id="test_3_Region" name="test_3_Region" />
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 120px" id="testPostalCoder0">
+                                    PostalCode
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                                        maxlength="10" value="98033" id="test_3_PostalCode" name="test_3_PostalCode" />
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 84px" id="testCountryr0">
+                                    Country
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                                        maxlength="15" value="USA" id="test_3_Country" name="test_3_Country" />
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 108px" id="testHomePhoner0">
+                                    HomePhone
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                                        maxlength="24" value="(206) 555-3412" id="test_3_HomePhone" name="test_3_HomePhone" />
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 108px" id="testExtensionr0">
+                                    Extension
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                                        maxlength="4" value="3355" id="test_3_Extension" name="test_3_Extension" />
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 60px" id="testPhotor0">
+                                    Photo
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 60px" id="testNotesr0">
+                                    Notes
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                                        maxlength="536870910" value="Janet has a BS degree in chemistry from Boston College (1984).  She has also completed a certificate program in food retailing management.  Janet was hired as a sales associate in 1991 and promoted to sales representative in February 1992."
+                                        id="test_3_Notes" name="test_3_Notes" />
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 108px" id="testReportsTor0">
+                                    ReportsTo
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    <input type="text" onblur="isChanged(this,'LightSteelBlue');" class="wgeditfield"
+                                        style="text-align: Right;" value="2" id="test_3_ReportsTo" name="test_3_ReportsTo" />
+                                </td>
+                            </tr>
+                            <tr class="wgrow">
+                                <td align="Left" valign="middle" class="wgrow " style="width: 108px" id="testPhotoPathr0">
+                                    PhotoPath
+                                </td>
+                                <td colspan="3" valign="middle" class="wgrow ">
+                                    <input onblur="isChanged(this,'LightSteelBlue');" style="" type="text" class="wgeditfield"
+                                        maxlength="255" value="http://accweb/emmployees/leverling.bmp" id="test_3_PhotoPath"
+                                        name="test_3_PhotoPath" />
+                                </td>
+                            </tr>
+                            <tr class="wgrow wgtoolbaredit">
+                                <td class="wgrow wgtoolbaredit" colspan="4">
+                                    <table cellspacing="0" width="100%" cellpadding="0">
+                                        <tr>
+                                            <td align="left">
+                                                <a onmouseover="return window.status='Click to activate.';return true;" onmouseout="window.status='';"
+                                                    class="wgupdaterecord" id="test_wgupdaterecord" href="#" onclick=";return false;">
+                                                    Save and close window</a> <a onmouseover="return window.status='Click to activate.';return true;"
+                                                        onmouseout="window.status='';" class="wgclosewindow" href="#" onclick=";return false;">
+                                                        Close Window</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <script langauge="javascript"></script>
+
+        </form>
+    </body>
+    </html>
+</body>
+</html>
