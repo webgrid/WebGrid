@@ -1,0 +1,22 @@
+WebGrid is using Anthem.NET a FREE, cross-browser AJAX toolkit for the ASP.NET development environment that works with both ASP.NET 1.1 and 2.0.
+
+Following changes is done:
+
+Anthem.js file at function:
+
+function Anthem_CallBack(url, target, id, method, args, clientCallBack, clientCallBackArg, includeControlValuesWithCallBack, updatePageAfterCallBack) {
+
+/* Inserted by olav@webgrid.com for supporting 'submit' event */
+        var eventType = 'submit';
+        var element = Anthem_GetForm();
+        if (element.fireEvent) 
+        {
+            element.fireEvent('on' + eventType);
+        }
+        else 
+        {
+            var evt = document.createEvent('Events');
+            evt.initEvent(eventType, false, true);
+            evt.preventDefault();
+            element.dispatchEvent(evt);
+        }
